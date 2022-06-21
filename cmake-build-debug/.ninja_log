@@ -1,0 +1,20 @@
+# ninja log v5
+4	1159	6775393801121193	CMakeFiles/Mercado_do_Bairro.dir/programaPrincipal.c.obj	c3c5c8702811b0da
+4	1158	6775381082514866	CMakeFiles/Mercado_do_Bairro.dir/subMenuClientes.c.obj	fcbf0aaa8a7cc8aa
+12	1173	6775381082514866	CMakeFiles/Mercado_do_Bairro.dir/subMenuVendas.c.obj	a1b41830607ce22f
+2	878	6775418460484525	CMakeFiles/Mercado_do_Bairro.dir/atualizar.c.obj	cab831ef4292c41c
+9	1191	6775393801433617	CMakeFiles/Mercado_do_Bairro.dir/subMenuProdutos.c.obj	d024c83eb090b278
+886	1078	6775418462359329	Mercado_do_Bairro.exe	1880fdbc5504d0fe
+12	393	6775481990947415	build.ninja	75e75234ce6d7877
+3	806	6775397591665946	CMakeFiles/Mercado_do_Bairro.dir/cadNovProd.c.obj	a27ac85d17bd92dc
+17	2273	6775482137167153	CMakeFiles/Mercado_do_Bairro.dir/subMenuClientes.c.obj	3026a49ab03c0b26
+23	2327	6775482137791986	CMakeFiles/Mercado_do_Bairro.dir/subMenuVendas.c.obj	3cf1ffb73449c424
+6	2364	6775482138104423	CMakeFiles/Mercado_do_Bairro.dir/programaPrincipal.c.obj	13936bf45827f46a
+51	2381	6775482138260624	CMakeFiles/Mercado_do_Bairro.dir/subMenuProdutos.c.obj	9ebbfdfa77cdf462
+40	2398	6775482138416871	CMakeFiles/Mercado_do_Bairro.dir/atualizar.c.obj	6c5a370d13e3c305
+30	2422	6775482138729271	CMakeFiles/Mercado_do_Bairro.dir/cadNovProd.c.obj	7ac62751c46e790a
+2431	2726	6775482141697318	Mercado_do_Bairro.exe	1880fdbc5504d0fe
+13	1182	6775551300118065	CMakeFiles/Mercado_do_Bairro.dir/subMenuProdutos.c.obj	9ebbfdfa77cdf462
+4	1196	6775551300118065	CMakeFiles/Mercado_do_Bairro.dir/subMenuClientes.c.obj	3026a49ab03c0b26
+9	1204	6775551300274280	CMakeFiles/Mercado_do_Bairro.dir/subMenuVendas.c.obj	3cf1ffb73449c424
+1208	1418	6775551302461523	Mercado_do_Bairro.exe	1880fdbc5504d0fe
