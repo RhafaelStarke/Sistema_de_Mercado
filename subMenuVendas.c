@@ -23,13 +23,13 @@ void subMenuVendas()
         {
             case 1:
                 system("cls");
-                printf ("\n\nRealizar Nova Venda: \n");
+                printf ("\n\nREALIZAR NOVA VENDA: \n");
 
                 system("pause");
                 break;
             case 2:
                 system("cls");
-                printf ("\n\nLista da Nova Venda do Cliente: \n");
+                printf ("\n\nLISTA DE NOVA VENDA DO CLIENTE: \n");
 
                 system("pause");
                 break;
@@ -41,7 +41,7 @@ void subMenuVendas()
                 break;
             default:
                 system("cls");
-                printf ("Comando Inválido! \n");
+                printf ("COMANDO INVÁLIDO! \n");
                 system("pause");
                 break;
         }

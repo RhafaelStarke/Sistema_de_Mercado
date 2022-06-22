@@ -12,7 +12,7 @@ void cadNovProd()
     TProduto produtos;
 
     system("cls");
-    printf ("\n\nCadastro de Novo Produto: \n");
+    printf ("\n\nCADASTRO DE NOVO PRODUTO: \n");
     arq = fopen ("../Produtos.csv", "a+");
     if (arq != NULL)
     {

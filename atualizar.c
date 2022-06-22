@@ -12,7 +12,7 @@ void atualizar()
     TProduto produtos;
 
     system("cls");
-    printf ("\n\nAtualização de Informações dos Produtos: \n");
+    printf ("\n\nATUALIZAÇÃO DE DADOS DOS PRODUTOS: \n");
     arq = fopen ("../Produtos.csv", "a+");
     if (arq != NULL)
     {

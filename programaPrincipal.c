@@ -41,7 +41,7 @@ int main ()
                 break;
             default:
                 system ("cls");
-                printf ("\nComando inválido! \n");
+                printf ("\nCOMANDO INVÁLIDO! \n");
                 system ("pause");
                 break;
         }

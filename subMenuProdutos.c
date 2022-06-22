@@ -32,13 +32,13 @@ void subMenuProdutos()
                 break;
             case 3:
                 system("cls");
-                printf ("\n\nLista de Estoque por setor: \n");
+                printf ("\n\nLISTA DE ESTOQUE POR SETOR: \n");
 
                 system("pause");
                 break;
             case 4:
                 system("cls");
-                printf ("Lista de Produtos Com Estoque Baixo: \n");
+                printf ("LISTA DE PRODUTOS COM ESTOQUE BAIXO: \n");
 
                 system("pause");
                 break;
@@ -49,7 +49,7 @@ void subMenuProdutos()
                 return;
             default:
                 system ("cls");
-                printf("Comando Inválido! \n");
+                printf("COMANDO INVÁLIDO! \n");
                 system("pause");
                 break;
         }
