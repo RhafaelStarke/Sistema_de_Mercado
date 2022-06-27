@@ -11,5 +11,4 @@ add_executable(Mercado_do_Bairro
         subMenu.h
         Estruturas.h
         cadNovProd.c
-        atualizar.c
-        )
+        atualizar.c)

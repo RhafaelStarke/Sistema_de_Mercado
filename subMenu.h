@@ -6,7 +6,7 @@
 #define MERCADO_DO_BAIRRO_SUBMENU_H
 void subMenuClientes();
 void subMenuVendas();
-void cadNovProd();
 void subMenuProdutos();
+void cadNovProd();
 void atualizar();
 #endif //MERCADO_DO_BAIRRO_SUBMENU_H

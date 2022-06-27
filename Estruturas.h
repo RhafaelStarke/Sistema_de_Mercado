@@ -13,7 +13,7 @@ typedef struct TData
 typedef struct TVenda
 {
     int idenVenda;
-    int cpf;
+    char cpf[13];
     TData dataCompr;
     float valorTot;
     int qtdProd;
@@ -36,6 +36,6 @@ typedef struct TCliente
     char end[50];
     char cid[50];
     char est[2];
-    int point;
+    int pontos;
 } TCliente;
 #endif //MERCADO_DO_BAIRRO_ESTRUTURAS_H

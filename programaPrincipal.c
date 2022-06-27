@@ -12,6 +12,7 @@ int main ()
 
     do
     {
+        //Menu principal do programa.
         system ("cls");
         printf ("\n\n*****MENU*****\n");
         printf ("1. Vendas \n");
@@ -24,22 +25,22 @@ int main ()
 
         switch (menu)
         {
-            case 1: //Vendas
+            case 1: //Submenu de vendas.
                 subMenuVendas();
                 break;
-            case 2: //Clientes
+            case 2: //Submenu de clientes.
                 subMenuClientes();
                 break;
-            case 3: //Produtos
+            case 3: //Submenu de produtos.
                 subMenuProdutos();
                 break;
-            case 9: //Sair
+            case 9: //Opção de sair.
                 system ("cls");
-                printf ("\nPrograma Encerrado Pelo Usuário! \n");
+                printf ("\nPROGRAMA ENCERRADO PELO USUÁRIO! \n");
                 system ("pause");
                 return;
                 break;
-            default:
+            default: //Opção caso entre com outro valor.
                 system ("cls");
                 printf ("\nCOMANDO INVÁLIDO! \n");
                 system ("pause");
