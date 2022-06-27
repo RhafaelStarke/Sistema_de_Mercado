@@ -9,6 +9,9 @@ add_executable(Mercado_do_Bairro
         subMenuProdutos.c
         subMenuVendas.c
         subMenu.h
-        Estruturas.h
+        registros.h
         cadNovProd.c
-        atualizar.c)
+        atualProd.c
+        funcoes.h
+        cadNovClien.c
+        atualClien.c)

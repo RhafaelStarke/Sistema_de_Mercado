@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <windows.h>
-#include "Estruturas.h"
+#include "registros.h"
 
 void cadNovProd()
 {

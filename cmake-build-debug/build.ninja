@@ -79,8 +79,20 @@ build CMakeFiles/Mercado_do_Bairro.dir/cadNovProd.c.obj: C_COMPILER__Mercado_do_
   OBJECT_DIR = CMakeFiles\Mercado_do_Bairro.dir
   OBJECT_FILE_DIR = CMakeFiles\Mercado_do_Bairro.dir
 
-build CMakeFiles/Mercado_do_Bairro.dir/atualizar.c.obj: C_COMPILER__Mercado_do_Bairro_Debug C$:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/atualizar.c || cmake_object_order_depends_target_Mercado_do_Bairro
-  DEP_FILE = CMakeFiles\Mercado_do_Bairro.dir\atualizar.c.obj.d
+build CMakeFiles/Mercado_do_Bairro.dir/atualProd.c.obj: C_COMPILER__Mercado_do_Bairro_Debug C$:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/atualProd.c || cmake_object_order_depends_target_Mercado_do_Bairro
+  DEP_FILE = CMakeFiles\Mercado_do_Bairro.dir\atualProd.c.obj.d
+  FLAGS = -g -std=gnu11
+  OBJECT_DIR = CMakeFiles\Mercado_do_Bairro.dir
+  OBJECT_FILE_DIR = CMakeFiles\Mercado_do_Bairro.dir
+
+build CMakeFiles/Mercado_do_Bairro.dir/cadNovClien.c.obj: C_COMPILER__Mercado_do_Bairro_Debug C$:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/cadNovClien.c || cmake_object_order_depends_target_Mercado_do_Bairro
+  DEP_FILE = CMakeFiles\Mercado_do_Bairro.dir\cadNovClien.c.obj.d
+  FLAGS = -g -std=gnu11
+  OBJECT_DIR = CMakeFiles\Mercado_do_Bairro.dir
+  OBJECT_FILE_DIR = CMakeFiles\Mercado_do_Bairro.dir
+
+build CMakeFiles/Mercado_do_Bairro.dir/atualClien.c.obj: C_COMPILER__Mercado_do_Bairro_Debug C$:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/atualClien.c || cmake_object_order_depends_target_Mercado_do_Bairro
+  DEP_FILE = CMakeFiles\Mercado_do_Bairro.dir\atualClien.c.obj.d
   FLAGS = -g -std=gnu11
   OBJECT_DIR = CMakeFiles\Mercado_do_Bairro.dir
   OBJECT_FILE_DIR = CMakeFiles\Mercado_do_Bairro.dir
@@ -93,7 +105,7 @@ build CMakeFiles/Mercado_do_Bairro.dir/atualizar.c.obj: C_COMPILER__Mercado_do_B
 #############################################
 # Link the executable Mercado_do_Bairro.exe
 
-build Mercado_do_Bairro.exe: C_EXECUTABLE_LINKER__Mercado_do_Bairro_Debug CMakeFiles/Mercado_do_Bairro.dir/programaPrincipal.c.obj CMakeFiles/Mercado_do_Bairro.dir/subMenuClientes.c.obj CMakeFiles/Mercado_do_Bairro.dir/subMenuProdutos.c.obj CMakeFiles/Mercado_do_Bairro.dir/subMenuVendas.c.obj CMakeFiles/Mercado_do_Bairro.dir/cadNovProd.c.obj CMakeFiles/Mercado_do_Bairro.dir/atualizar.c.obj
+build Mercado_do_Bairro.exe: C_EXECUTABLE_LINKER__Mercado_do_Bairro_Debug CMakeFiles/Mercado_do_Bairro.dir/programaPrincipal.c.obj CMakeFiles/Mercado_do_Bairro.dir/subMenuClientes.c.obj CMakeFiles/Mercado_do_Bairro.dir/subMenuProdutos.c.obj CMakeFiles/Mercado_do_Bairro.dir/subMenuVendas.c.obj CMakeFiles/Mercado_do_Bairro.dir/cadNovProd.c.obj CMakeFiles/Mercado_do_Bairro.dir/atualProd.c.obj CMakeFiles/Mercado_do_Bairro.dir/cadNovClien.c.obj CMakeFiles/Mercado_do_Bairro.dir/atualClien.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Mercado_do_Bairro.dir

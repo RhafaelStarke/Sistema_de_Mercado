@@ -1,13 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <windows.h>
-#include "Estruturas.h"
-#include "subMenu.h"
+#include "funcoes.h"
 
 void subMenuProdutos()
 {
     int subMenu3;
-    TProduto produtos;
     FILE *arq;
 
     do
@@ -29,7 +27,7 @@ void subMenuProdutos()
                 cadNovProd();
                 break;
             case 2: //Caso escolha 2, a função para atualizar informações do cliente é chamada.
-                atualizar();
+                atualProd();
                 break;
             case 3: //Caso escolha 3, a função para listar estoque por setor é chamada.
                 system("cls");

@@ -4,9 +4,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <windows.h>
-#include "Estruturas.h"
+#include "registros.h"
 
-void atualizar()
+void atualProd()
 {
     FILE *arq;
 
@@ -36,7 +36,7 @@ void atualizar()
             printf("Preço: R$ %.2lf \n", novoProduto.preco);
             printf("Data de validade: %d/%d/%d \n", novoProduto.dataVal.dia, novoProduto.dataVal.mes,novoProduto.dataVal.ano);
             printf("Quantidade no estoque: %d \n", novoProduto.qtdEstoq);
-            printf("Confirmar Mesmo Editar Este Produto [S/N]? ");
+            printf("Quer Mesmo Editar Este Produto [S/N]? ");
             scanf(" %c", &edit);
 
             //Atualização do produto.
@@ -65,6 +65,8 @@ void atualizar()
     }
     else
     {
-        printf ("Erro na Abertura do Arquivo! \n");
+        system("cls");
+        printf ("ERRO NA ABERTURA DO ARQUIVO! \n");
+        system("pause");
     }
 }

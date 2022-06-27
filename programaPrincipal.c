@@ -2,7 +2,6 @@
 #include <windows.h>
 #include <stdlib.h>
 #include "subMenu.h"
-#include "Estruturas.h"
 
 int main ()
 {

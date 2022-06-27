@@ -1,12 +1,11 @@
 #include <stdio.h>
-#include "Estruturas.h"
 #include <stdlib.h>
 #include <windows.h>
+#include "funcoes.h"
 
 void subMenuClientes()
 {
     int subMenu2;
-    TCliente clientes;
 
     do
     {
@@ -24,10 +23,7 @@ void subMenuClientes()
         switch (subMenu2)
         {
             case 1:
-                system("cls");
-                printf ("\n\nCADASTRO DE NOVO CLIENTE: \n");
-
-                system("pause");
+                cadNovClien();
                 break;
             case 2:
                 system("cls");
@@ -36,10 +32,7 @@ void subMenuClientes()
                 system( "pause");
                 break;
             case 3:
-                system("cls");
-                printf ("\n\nATUALIZAÇÃO DE DADOS DO CLIENTE: \n");
-
-                system("pause");
+                atualClien();
                 break;
             case 4:
                 system("cls");

@@ -2,8 +2,8 @@
 // Created by rh4f4 on 21/06/2022.
 //
 
-#ifndef MERCADO_DO_BAIRRO_ESTRUTURAS_H
-#define MERCADO_DO_BAIRRO_ESTRUTURAS_H
+#ifndef MERCADO_DO_BAIRRO_REGISTROS_H
+#define MERCADO_DO_BAIRRO_REGISTROS_H
 typedef struct TData
 {
     int dia;
@@ -30,7 +30,7 @@ typedef struct TProduto
 typedef struct TCliente
 {
     char cpf[13];
-    char nomeCliente[50];
+    char nomeClien[50];
     TData nasc;
     int idade;
     char end[50];
@@ -38,4 +38,4 @@ typedef struct TCliente
     char est[2];
     int pontos;
 } TCliente;
-#endif //MERCADO_DO_BAIRRO_ESTRUTURAS_H
+#endif //MERCADO_DO_BAIRRO_REGISTROS_H

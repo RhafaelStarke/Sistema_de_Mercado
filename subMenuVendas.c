@@ -1,12 +1,11 @@
 #include <stdio.h>
-#include "Estruturas.h"
 #include <stdlib.h>
 #include <windows.h>
+#include "funcoes.h"
 
 void subMenuVendas()
 {
     int subMenu1;
-    TVenda vendas;
 
     do
     {
