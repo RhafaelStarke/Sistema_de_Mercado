@@ -33,9 +33,6 @@ void subMenuVendas()
                 system("pause");
                 break;
             case 9:
-                system("cls");
-                printf("Voltando para o menu principal... \n");
-                system("pause");
                 return;
                 break;
             default:

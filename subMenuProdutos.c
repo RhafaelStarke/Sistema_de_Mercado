@@ -42,9 +42,6 @@ void subMenuProdutos()
                 system("pause");
                 break;
             case 9: //Caso escolha 9, volta para o menu principal.
-                system("cls");
-                printf ("Voltando para o menu principal... \n");
-                system("pause");
                 return;
             default: //Caso entre com uma opção inválida, o usuário é avisado.
                 system ("cls");

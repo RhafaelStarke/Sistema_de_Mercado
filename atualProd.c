@@ -12,7 +12,7 @@ void atualProd()
 
     system("cls");
     printf ("\n\nATUALIZAÇÃO DE DADOS DOS PRODUTOS: \n");
-    arq = fopen ("../Produtos.dat", "r+wb");
+    arq = fopen ("../Produtos.dat", "r+b");
     if (arq != NULL)
     {
         int iden;
