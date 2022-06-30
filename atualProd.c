@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <windows.h>
+#include "subMenu.h"
 #include "registros.h"
 
 void atualProd()
@@ -19,26 +20,25 @@ void atualProd()
         TProduto produto, novoProduto;
         char edit = 'n';
 
-        do{
-            //Usuário entra com a identificação do produto que será atualizado.
-            system("cls");
-            printf("\n\nEntre com a identificação do produto que quer atualizar as informações: \n");
-            scanf(" %d", &iden);
-            fseek(arq, sizeof(TProduto) * (iden - 1), SEEK_SET);
-            fread(&novoProduto, sizeof(TProduto), 1, arq);
+        //Usuário entra com a identificação do produto que será atualizado.
+        system("cls");
+        printf("\n\nEntre com a identificação do produto que quer atualizar as informações: \n");
+        scanf(" %d", &iden);
+        fseek(arq, sizeof(TProduto) * (iden - 1), SEEK_SET);
+        fread(&novoProduto, sizeof(TProduto), 1, arq);
 
-            //Mostrar produto que será atualizado.
-            system("cls");
-            printf("PRODUTO COM IDENTIFICAÇÃO CORRESPONDENTE: \n");
-            printf("Identificação: %d \n", novoProduto.idenProd);
-            printf("Setor: %s \n", novoProduto.setor);
-            printf("Nome: %s \n", novoProduto.nome);
-            printf("Preço: R$ %.2lf \n", novoProduto.preco);
-            printf("Data de validade: %d/%d/%d \n", novoProduto.dataVal.dia, novoProduto.dataVal.mes,novoProduto.dataVal.ano);
-            printf("Quantidade no estoque: %d \n", novoProduto.qtdEstoq);
+        //Mostrar produto que será atualizado.
+        system("cls");
+        printf("PRODUTO COM IDENTIFICAÇÃO CORRESPONDENTE: \n");
+        printf("Identificação: %d \n", novoProduto.idenProd);
+        printf("Setor: %s \n", novoProduto.setor);
+        printf("Nome: %s \n", novoProduto.nome);
+        printf("Preço: R$ %.2lf \n", novoProduto.preco);
+        printf("Data de validade: %d/%d/%d \n", novoProduto.dataVal.dia, novoProduto.dataVal.mes,novoProduto.dataVal.ano);
+        printf("Quantidade no estoque: %d \n", novoProduto.qtdEstoq);
+        do{
             printf("Quer Mesmo Editar Este Produto [S/N]? ");
             scanf(" %c", &edit);
-
             //Atualização do produto.
             if ((edit == 'S') || (edit == 's')) {
                 system("cls");
@@ -61,7 +61,15 @@ void atualProd()
                 printf("\n\nInformações do Produto Modificadas com Sucesso! \n");
                 system("pause");
             }
-        }while ((edit == 'N') || (edit == 'n'));
+            else if((edit=='n')||(edit=='N'))
+            {
+                subMenuProdutos();
+            }
+            else
+            {
+                printf("COMANDO INVÁLIDO! \n");
+            }
+        }while (1);
     }
     else
     {

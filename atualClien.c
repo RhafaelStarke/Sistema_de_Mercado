@@ -7,6 +7,7 @@
 #include <string.h>
 #include <stdbool.h>
 #include <time.h>
+#include "subMenu.h"
 #include "registros.h"
 #include "funcoes.h"
 
@@ -52,64 +53,58 @@ void atualClien()
                 printf("Cidade: %s \n", cliente.cid);
                 printf("Estado: %s \n", cliente.est);
                 printf("Pontos: %d \n", cliente.pontos);
-                printf("QUER MESMO EDITAR INFORMAÇÕES DESTE CLIENTE [S/N]? ");
-                scanf(" %c", &edit);
-                if ((edit == 's') || (edit == 'S'))
-                {
-                    //Atualização de dados do cliente.
-                    system("cls");
-                    printf("\n\nATUALIZAÇÃO DOS DADOS DO CLIENTE: %s \n", cliente.nomeClien);
-                    printf("CPF: ");
-                    scanf(" %[^\n]s", cliente.cpf);
-                    printf("Nome: ");
-                    scanf(" %[^\n]s", cliente.nomeClien);
-                    do
-                    {
-                        printf("Data de nascimento (dd/mm/aaaa): ");
-                        scanf(" %d/%d/%d", &cliente.nasc.dia, &cliente.nasc.mes, &cliente.nasc.ano);
-                        if ((cliente.nasc.dia < 0)||(cliente.nasc.dia > 31))
-                        {
-                            printf("DIGITE UM DIA VÁLIDO! \n");
+                do {
+                    printf("QUER MESMO EDITAR INFORMAÇÕES DESTE CLIENTE [S/N]? ");
+                    scanf(" %c", &edit);
+                    if ((edit == 's') || (edit == 'S')) {
+                        //Atualização de dados do cliente.
+                        system("cls");
+                        printf("\n\nATUALIZAÇÃO DOS DADOS DO CLIENTE: %s \n", cliente.nomeClien);
+                        printf("CPF: ");
+                        scanf(" %[^\n]s", cliente.cpf);
+                        printf("Nome: ");
+                        scanf(" %[^\n]s", cliente.nomeClien);
+                        do {
+                            printf("Data de nascimento (dd/mm/aaaa): ");
+                            scanf(" %d/%d/%d", &cliente.nasc.dia, &cliente.nasc.mes, &cliente.nasc.ano);
+                            if ((cliente.nasc.dia < 0) || (cliente.nasc.dia > 31)) {
+                                printf("DIGITE UM DIA VÁLIDO! \n");
+                            } else if ((cliente.nasc.mes < 0) || (cliente.nasc.mes > 12)) {
+                                printf("DIGITE UM MÊS VÁLIDO! \n");
+                            } else if ((cliente.nasc.ano < 0)) {
+                                printf("DIGITE UM ANO VÁLIDO! \n");
+                            } else {
+                                printf("DIGITE UMA DATA VÁLIDA! \n");
+                            }
+                        } while ((cliente.nasc.dia < 0) || (cliente.nasc.dia > 31) || (cliente.nasc.mes < 0) ||
+                                 (cliente.nasc.mes > 12) || (cliente.nasc.ano < 0));
+                        if ((cliente.nasc.dia <= tm.tm_mday) || (cliente.nasc.mes <= (tm.tm_mon + 1))) {
+                            cliente.idade = (tm.tm_year + 1900) - cliente.nasc.ano;
+                        } else {
+                            cliente.idade = ((tm.tm_year + 1900) - cliente.nasc.ano) - 1;
                         }
-                        else if ((cliente.nasc.mes < 0)||(cliente.nasc.mes > 12))
-                        {
-                            printf("DIGITE UM MÊS VÁLIDO! \n");
-                        }
-                        else if ((cliente.nasc.ano < 0))
-                        {
-                            printf("DIGITE UM ANO VÁLIDO! \n");
-                        }
-                    }while((cliente.nasc.dia < 0)||(cliente.nasc.dia > 31)||(cliente.nasc.mes < 0)||(cliente.nasc.mes > 12)||(cliente.nasc.ano < 0));
-
-                    if ((cliente.nasc.dia <= tm.tm_mday)||(cliente.nasc.mes <= (tm.tm_mon+1)))
-                    {
-                        cliente.idade = (tm.tm_year+1900)-cliente.nasc.ano;
+                        printf("Idade: %d Anos \n", cliente.idade);
+                        printf("Endereço: ");
+                        scanf(" %[^\n]s", cliente.end);
+                        printf("Cidade: ");
+                        scanf(" %[^\n]s", cliente.cid);
+                        printf("Estado (EE): ");
+                        scanf(" %[^\n]s", cliente.est);
+                        printf("Pontos: ");
+                        scanf(" %d", &cliente.pontos);
+                        fseek(arq, sizeof(TCliente) * flag, SEEK_SET);
+                        fwrite(&cliente, sizeof(TCliente), 1, arq);
+                        fflush(arq);
+                        system("cls");
+                        printf("DADOS DO CLIENTE ATUALIZADO COM SUCESSO! \n");
+                        system("pause");
+                        subMenuClientes();
+                    } else if ((edit == 'n') || (edit == 'N')) {
+                        atualClien();
+                    } else {
+                        printf("COMANDO INVÁLIDO! \n");
                     }
-                    else
-                    {
-                        cliente.idade = ((tm.tm_year+1900)-cliente.nasc.ano)-1;
-                    }
-                    printf("Idade: %d Anos \n", cliente.idade);
-                    printf("Endereço: ");
-                    scanf(" %[^\n]s", cliente.end);
-                    printf("Cidade: ");
-                    scanf(" %[^\n]s", cliente.cid);
-                    printf("Estado (EE): ");
-                    scanf(" %[^\n]s", cliente.est);
-                    printf("Pontos: ");
-                    scanf(" %d", &cliente.pontos);
-                    fseek(arq, sizeof(TCliente) * flag, SEEK_SET);
-                    fwrite(&cliente, sizeof(TCliente), 1, arq);
-                    fflush(arq);
-                    system("cls");
-                    printf("DADOS DO CLIENTE ATUALIZADO COM SUCESSO! \n");
-                    system("pause");
-                    return;
-                }
-                else
-                {
-                    atualClien();
-                }
+                } while(1);
             }
             flag += 1;
         }while(feof(arq) == false);
