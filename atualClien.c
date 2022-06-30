@@ -6,6 +6,7 @@
 #include <windows.h>
 #include <string.h>
 #include <stdbool.h>
+#include <time.h>
 #include "registros.h"
 #include "funcoes.h"
 
@@ -22,6 +23,9 @@ void atualClien()
         int flag = 0;
         TCliente cliente;
         bool flag2 = false;
+        time_t dataSist;
+        dataSist = time(NULL);
+        struct tm tm = *localtime(&dataSist);
 
         //Usuário entra com o CPF do cliente que terá suas informações modificadas.
         printf("Entre com o CPF do cliente que quer modificar as informações: \n");
@@ -36,13 +40,14 @@ void atualClien()
             {
                 flag2 = true;
                 char edit = 'n';
+
                 //Mostrar, caso encontre, o cliente que terá seus dados atualizados.
                 system("cls");
                 printf("CPF encontrado! \n");
                 printf("CPF: %s \n", cliente.cpf);
                 printf("Nome: %s \n", cliente.nomeClien);
                 printf("Data de nascimento: %d/%d/%d \n", cliente.nasc.dia, cliente.nasc.mes, cliente.nasc.ano);
-                printf("Idade: %d \n", cliente.idade);
+                printf("Idade: %d Anos \n", cliente.idade);
                 printf("Endereço: %s \n", cliente.end);
                 printf("Cidade: %s \n", cliente.cid);
                 printf("Estado: %s \n", cliente.est);
@@ -53,15 +58,38 @@ void atualClien()
                 {
                     //Atualização de dados do cliente.
                     system("cls");
-                    printf("\n\nATUALIZAÇÃO DOS DADOS DO CLIENTE %s \n", cliente.nomeClien);
+                    printf("\n\nATUALIZAÇÃO DOS DADOS DO CLIENTE: %s \n", cliente.nomeClien);
                     printf("CPF: ");
                     scanf(" %[^\n]s", cliente.cpf);
                     printf("Nome: ");
                     scanf(" %[^\n]s", cliente.nomeClien);
-                    printf("Data de nascimento (dd/mm/aaaa): ");
-                    scanf(" %d/%d/%d", &cliente.nasc.dia, &cliente.nasc.mes, &cliente.nasc.ano);
-                    printf("Idade: ");
-                    scanf(" %d", &cliente.idade);
+                    do
+                    {
+                        printf("Data de nascimento (dd/mm/aaaa): ");
+                        scanf(" %d/%d/%d", &cliente.nasc.dia, &cliente.nasc.mes, &cliente.nasc.ano);
+                        if ((cliente.nasc.dia < 0)||(cliente.nasc.dia > 31))
+                        {
+                            printf("DIGITE UM DIA VÁLIDO! \n");
+                        }
+                        else if ((cliente.nasc.mes < 0)||(cliente.nasc.mes > 12))
+                        {
+                            printf("DIGITE UM MÊS VÁLIDO! \n");
+                        }
+                        else if ((cliente.nasc.ano < 0))
+                        {
+                            printf("DIGITE UM ANO VÁLIDO! \n");
+                        }
+                    }while((cliente.nasc.dia < 0)||(cliente.nasc.dia > 31)||(cliente.nasc.mes < 0)||(cliente.nasc.mes > 12)||(cliente.nasc.ano < 0));
+
+                    if ((cliente.nasc.dia <= tm.tm_mday)||(cliente.nasc.mes <= (tm.tm_mon+1)))
+                    {
+                        cliente.idade = (tm.tm_year+1900)-cliente.nasc.ano;
+                    }
+                    else
+                    {
+                        cliente.idade = ((tm.tm_year+1900)-cliente.nasc.ano)-1;
+                    }
+                    printf("Idade: %d Anos \n", cliente.idade);
                     printf("Endereço: ");
                     scanf(" %[^\n]s", cliente.end);
                     printf("Cidade: ");

@@ -8,33 +8,42 @@
 
 void cadNovProd()
 {
-    int qtdCadProd;
+    char cad;
     FILE *arq;
     TProduto produtos, prodLidos;
 
-    system("cls");
-    printf ("\n\nCADASTRO DE NOVO PRODUTO: \n");
     arq = fopen ("../Produtos.dat", "ab+");
     if (arq != NULL)
     {
-        printf ("Quantos produtos quer cadastrar? \n");
-        scanf (" %d", &qtdCadProd);
-        for (int i = 0; i < qtdCadProd; i++)
+        do
         {
             //Coleta de informações do novo produto.
             system("cls");
-            printf ("\n\nIdentificação: ");
-            scanf (" %d", &produtos.idenProd);
-            printf ("Setor do produto: ");
-            scanf (" %[^\n]s", produtos.setor);
-            printf ("Nome: ");
-            scanf (" %[^\n]s", produtos.nome);
-            printf ("Preço: ");
-            scanf (" %lf", &produtos.preco);
-            printf ("Data de validade (dd/mm/aaaa): ");
-            scanf (" %d/%d/%d", &produtos.dataVal.dia, &produtos.dataVal.mes, &produtos.dataVal.ano);
-            printf ("Quantidade no estoque: ");
-            scanf (" %d", &produtos.qtdEstoq);
+            printf ("\n\nCADASTRO DE NOVO PRODUTO: \n");
+            do {
+                printf("\n\nIdentificação: ");
+                scanf(" %d", &produtos.idenProd);
+                if (produtos.idenProd < 0) {
+                    printf("DIGITE UMA IDENTIFICAÇÃO VÁLIDA! \n");
+                }
+            } while (produtos.idenProd < 0);
+            printf("Setor do produto: ");
+            scanf(" %[^\n]s", produtos.setor);
+            printf("Nome: ");
+            scanf(" %[^\n]s", produtos.nome);
+            printf("Preço: ");
+            scanf(" %lf", &produtos.preco);
+            printf("Data de validade (dd/mm/aaaa): ");
+            scanf(" %d/%d/%d", &produtos.dataVal.dia, &produtos.dataVal.mes, &produtos.dataVal.ano);
+            do
+            {
+                printf("Quantidade no estoque: ");
+                scanf(" %d", &produtos.qtdEstoq);
+                if(produtos.qtdEstoq < 0)
+                {
+                    printf("DIGITE UMA QUANTIDADE POSITIVA! \n");
+                }
+            }while(produtos.qtdEstoq < 0);
 
             //Escrever as informações no arquivo.
             fwrite(&produtos, sizeof(TProduto), 1, arq);
@@ -42,8 +51,9 @@ void cadNovProd()
 
             system("cls");
             printf("PRODUTO CADASTRADO COM SUCESSO! \n");
-            system("pause");
-        }
+            printf("Quer cadastrar outro produto? [S/N] ");
+            scanf(" %c", &cad);
+        } while((cad == 's')||(cad == 'S'));
         fclose (arq);
     }
     else
