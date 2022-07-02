@@ -21,6 +21,7 @@ void atualProd()
         int flag=0;
         TProduto produto, novoProduto;
         char edit = 'n';
+        int set;
 
         //USUÁRIO ENTRA COM A IDENTIFICAÇÃO DO PRODUTO QUE SERÁ ATUALIZADO
         system("cls");
@@ -50,8 +51,36 @@ void atualProd()
                         system("cls");
                         printf("\n\nNova identificação: ");
                         scanf(" %d", &novoProduto.idenProd);
-                        printf("Novo setor do produto: ");
-                        scanf(" %[^\n]s", novoProduto.setor);
+                        printf("Setores de produtos: \n");
+                        printf("1. Higiene e Limpeza \n");
+                        printf("2. Bebidas \n");
+                        printf("3. Frios \n");
+                        printf("4. Padaria \n");
+                        printf("5. Açougue \n");
+                        do{
+                            printf("Novo setor: ");
+                            scanf(" %d", &set);
+                            switch (set) {
+                                case 1:
+                                    strcpy(novoProduto.setor, "Higiene e limpeza");
+                                    break;
+                                case 2:
+                                    strcpy(novoProduto.setor, "Bebidas");
+                                    break;
+                                case 3:
+                                    strcpy(novoProduto.setor, "Frios");
+                                    break;
+                                case 4:
+                                    strcpy(novoProduto.setor, "Padaria");
+                                    break;
+                                case 5:
+                                    strcpy(novoProduto.setor, "Acougue");
+                                    break;
+                                default:
+                                    printf("COMANDO INVÁLIDO! \n");
+                                    break;
+                            }
+                        } while ((set<1)||(set>5));
                         printf("Novo nome: ");
                         scanf(" %[^\n]s", novoProduto.nome);
                         printf("Novo preço: ");
@@ -69,6 +98,7 @@ void atualProd()
                         system("cls");
                         printf("\n\nInformações do Produto Modificadas com Sucesso! \n");
                         system("pause");
+                        return;
                     } else if ((edit == 'n') || (edit == 'N')) {
                         subMenuProdutos();
                     } else {

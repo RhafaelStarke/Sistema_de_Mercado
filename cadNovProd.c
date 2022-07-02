@@ -4,11 +4,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <windows.h>
+#include "funcoes.h"
 #include "registros.h"
 
 void cadNovProd()
 {
     char cad;
+    int set;
     FILE *arq;
     TProduto produtos, prodLidos;
 
@@ -27,8 +29,36 @@ void cadNovProd()
                     printf("DIGITE UMA IDENTIFICAÇÃO VÁLIDA! \n");
                 }
             } while (produtos.idenProd < 0);
-            printf("Setor do produto: ");
-            scanf(" %[^\n]s", produtos.setor);
+            printf("Setores de produtos: \n");
+            printf("1. Higiene e Limpeza \n");
+            printf("2. Bebidas \n");
+            printf("3. Frios \n");
+            printf("4. Padaria \n");
+            printf("5. Açougue \n");
+            do{
+                printf("Setor: ");
+                scanf(" %d", &set);
+                switch (set) {
+                    case 1:
+                        strcpy(produtos.setor, "Higiene e limpeza");
+                        break;
+                    case 2:
+                        strcpy(produtos.setor, "Bebidas");
+                        break;
+                    case 3:
+                        strcpy(produtos.setor, "Frios");
+                        break;
+                    case 4:
+                        strcpy(produtos.setor, "Padaria");
+                        break;
+                    case 5:
+                        strcpy(produtos.setor, "Acougue");
+                        break;
+                    default:
+                        printf("COMANDO INVÁLIDO! \n");
+                        break;
+                }
+            } while ((set<1)||(set>5));
             printf("Nome: ");
             scanf(" %[^\n]s", produtos.nome);
             printf("Preço: ");
