@@ -31,7 +31,6 @@ void atualClien()
         //USUÁRIO ENTRA COM O CPF QUE TERÁ SEUS DADOS EDITADOS
         printf("Entre com o CPF do cliente que quer modificar as informações: \n");
         scanf(" %[^\n]s", cpf);
-
         do
         {
             //PROCURAR CPF COMPATÍVEL
@@ -127,6 +126,5 @@ void atualClien()
         system("cls");
         printf ("ERRO NA ABERTURA DO ARQUIVO! \n");
         system("pause");
-        atualClien();
     }
 }

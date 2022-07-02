@@ -15,4 +15,4 @@ add_executable(Mercado_do_Bairro
         funcoes.h
         cadNovClien.c
         atualClien.c
-        atuaPontos.c)
+        atuaPontos.c listar18a25.c listar1000.c)

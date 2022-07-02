@@ -8,8 +8,8 @@
 void cadNovClien();
 void atuaPontos();
 void atualClien();
-//void listClien();
-//void listPointClien();
+void listar18a25();
+void listar1000();
 
 //Funções para submenu de vendas.
 //void novaVenda();

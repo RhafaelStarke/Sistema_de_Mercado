@@ -31,16 +31,10 @@ void subMenuClientes()
                 atualClien();
                 break;
             case 4:
-                system("cls");
-                printf ("\n\nLISTA DE CLIENTES ENTRE 18 A 25 ANOS: \n");
-
-                system("pause");
+                listar18a25();
                 break;
             case 5:
-                system("cls");
-                printf ("\n\nLISTA DE CLIENTES ACIMA DE 1000 PONTOS: \n");
-
-                system("pause");
+                listar1000();
                 break;
             case 9:
                 return;
