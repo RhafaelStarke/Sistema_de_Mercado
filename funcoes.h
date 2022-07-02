@@ -18,6 +18,6 @@ void listar1000();
 //Funções para submenu de produtos.
 void cadNovProd();
 void atualProd();
-//void estoqSet();
+void listarSet();
 //void estoqBaixo();
 #endif //MERCADO_DO_BAIRRO_FUNCOES_H

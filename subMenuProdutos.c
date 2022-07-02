@@ -30,10 +30,7 @@ void subMenuProdutos()
                 atualProd();
                 break;
             case 3: //Caso escolha 3, a função para listar estoque por setor é chamada.
-                system("cls");
-                printf ("\n\nLISTA DE ESTOQUE POR SETOR: \n");
-
-                system("pause");
+                listarSet();
                 break;
             case 4: //Caso escolha 4, a função para listar produtos com estoque baixo é chamada.
                 system("cls");

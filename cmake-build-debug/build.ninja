@@ -115,6 +115,42 @@ build CMakeFiles/Mercado_do_Bairro.dir/listar1000.c.obj: C_COMPILER__Mercado_do_
   OBJECT_DIR = CMakeFiles\Mercado_do_Bairro.dir
   OBJECT_FILE_DIR = CMakeFiles\Mercado_do_Bairro.dir
 
+build CMakeFiles/Mercado_do_Bairro.dir/listarSet.c.obj: C_COMPILER__Mercado_do_Bairro_Debug C$:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/listarSet.c || cmake_object_order_depends_target_Mercado_do_Bairro
+  DEP_FILE = CMakeFiles\Mercado_do_Bairro.dir\listarSet.c.obj.d
+  FLAGS = -g -std=gnu11
+  OBJECT_DIR = CMakeFiles\Mercado_do_Bairro.dir
+  OBJECT_FILE_DIR = CMakeFiles\Mercado_do_Bairro.dir
+
+build CMakeFiles/Mercado_do_Bairro.dir/listarHigiene.c.obj: C_COMPILER__Mercado_do_Bairro_Debug C$:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/listarHigiene.c || cmake_object_order_depends_target_Mercado_do_Bairro
+  DEP_FILE = CMakeFiles\Mercado_do_Bairro.dir\listarHigiene.c.obj.d
+  FLAGS = -g -std=gnu11
+  OBJECT_DIR = CMakeFiles\Mercado_do_Bairro.dir
+  OBJECT_FILE_DIR = CMakeFiles\Mercado_do_Bairro.dir
+
+build CMakeFiles/Mercado_do_Bairro.dir/listarBebs.c.obj: C_COMPILER__Mercado_do_Bairro_Debug C$:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/listarBebs.c || cmake_object_order_depends_target_Mercado_do_Bairro
+  DEP_FILE = CMakeFiles\Mercado_do_Bairro.dir\listarBebs.c.obj.d
+  FLAGS = -g -std=gnu11
+  OBJECT_DIR = CMakeFiles\Mercado_do_Bairro.dir
+  OBJECT_FILE_DIR = CMakeFiles\Mercado_do_Bairro.dir
+
+build CMakeFiles/Mercado_do_Bairro.dir/listarFrios.c.obj: C_COMPILER__Mercado_do_Bairro_Debug C$:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/listarFrios.c || cmake_object_order_depends_target_Mercado_do_Bairro
+  DEP_FILE = CMakeFiles\Mercado_do_Bairro.dir\listarFrios.c.obj.d
+  FLAGS = -g -std=gnu11
+  OBJECT_DIR = CMakeFiles\Mercado_do_Bairro.dir
+  OBJECT_FILE_DIR = CMakeFiles\Mercado_do_Bairro.dir
+
+build CMakeFiles/Mercado_do_Bairro.dir/listarPad.c.obj: C_COMPILER__Mercado_do_Bairro_Debug C$:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/listarPad.c || cmake_object_order_depends_target_Mercado_do_Bairro
+  DEP_FILE = CMakeFiles\Mercado_do_Bairro.dir\listarPad.c.obj.d
+  FLAGS = -g -std=gnu11
+  OBJECT_DIR = CMakeFiles\Mercado_do_Bairro.dir
+  OBJECT_FILE_DIR = CMakeFiles\Mercado_do_Bairro.dir
+
+build CMakeFiles/Mercado_do_Bairro.dir/listarAco.c.obj: C_COMPILER__Mercado_do_Bairro_Debug C$:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/listarAco.c || cmake_object_order_depends_target_Mercado_do_Bairro
+  DEP_FILE = CMakeFiles\Mercado_do_Bairro.dir\listarAco.c.obj.d
+  FLAGS = -g -std=gnu11
+  OBJECT_DIR = CMakeFiles\Mercado_do_Bairro.dir
+  OBJECT_FILE_DIR = CMakeFiles\Mercado_do_Bairro.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Mercado_do_Bairro
@@ -123,7 +159,7 @@ build CMakeFiles/Mercado_do_Bairro.dir/listar1000.c.obj: C_COMPILER__Mercado_do_
 #############################################
 # Link the executable Mercado_do_Bairro.exe
 
-build Mercado_do_Bairro.exe: C_EXECUTABLE_LINKER__Mercado_do_Bairro_Debug CMakeFiles/Mercado_do_Bairro.dir/programaPrincipal.c.obj CMakeFiles/Mercado_do_Bairro.dir/subMenuClientes.c.obj CMakeFiles/Mercado_do_Bairro.dir/subMenuProdutos.c.obj CMakeFiles/Mercado_do_Bairro.dir/subMenuVendas.c.obj CMakeFiles/Mercado_do_Bairro.dir/cadNovProd.c.obj CMakeFiles/Mercado_do_Bairro.dir/atualProd.c.obj CMakeFiles/Mercado_do_Bairro.dir/cadNovClien.c.obj CMakeFiles/Mercado_do_Bairro.dir/atualClien.c.obj CMakeFiles/Mercado_do_Bairro.dir/atuaPontos.c.obj CMakeFiles/Mercado_do_Bairro.dir/listar18a25.c.obj CMakeFiles/Mercado_do_Bairro.dir/listar1000.c.obj
+build Mercado_do_Bairro.exe: C_EXECUTABLE_LINKER__Mercado_do_Bairro_Debug CMakeFiles/Mercado_do_Bairro.dir/programaPrincipal.c.obj CMakeFiles/Mercado_do_Bairro.dir/subMenuClientes.c.obj CMakeFiles/Mercado_do_Bairro.dir/subMenuProdutos.c.obj CMakeFiles/Mercado_do_Bairro.dir/subMenuVendas.c.obj CMakeFiles/Mercado_do_Bairro.dir/cadNovProd.c.obj CMakeFiles/Mercado_do_Bairro.dir/atualProd.c.obj CMakeFiles/Mercado_do_Bairro.dir/cadNovClien.c.obj CMakeFiles/Mercado_do_Bairro.dir/atualClien.c.obj CMakeFiles/Mercado_do_Bairro.dir/atuaPontos.c.obj CMakeFiles/Mercado_do_Bairro.dir/listar18a25.c.obj CMakeFiles/Mercado_do_Bairro.dir/listar1000.c.obj CMakeFiles/Mercado_do_Bairro.dir/listarSet.c.obj CMakeFiles/Mercado_do_Bairro.dir/listarHigiene.c.obj CMakeFiles/Mercado_do_Bairro.dir/listarBebs.c.obj CMakeFiles/Mercado_do_Bairro.dir/listarFrios.c.obj CMakeFiles/Mercado_do_Bairro.dir/listarPad.c.obj CMakeFiles/Mercado_do_Bairro.dir/listarAco.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Mercado_do_Bairro.dir
