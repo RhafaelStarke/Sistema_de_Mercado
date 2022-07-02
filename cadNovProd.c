@@ -17,7 +17,7 @@ void cadNovProd()
     {
         do
         {
-            //Coleta de informações do novo produto.
+            //COLETA DE INFORMAÇÕES DO NOVO PRODUTO
             system("cls");
             printf ("\n\nCADASTRO DE NOVO PRODUTO: \n");
             do {
@@ -45,7 +45,7 @@ void cadNovProd()
                 }
             }while(produtos.qtdEstoq < 0);
 
-            //Escrever as informações no arquivo.
+            //GRAVANDO AS INFORMAÇÕES NO ARQUIVO
             fwrite(&produtos, sizeof(TProduto), 1, arq);
             fflush (arq);
 

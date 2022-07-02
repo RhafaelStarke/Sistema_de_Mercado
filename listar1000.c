@@ -17,6 +17,8 @@ void listar1000(){
     if(arq!=NULL){
         while (fread(&listCliente, sizeof(TCliente), 1, arq)){
             if(listCliente.pontos>1000) {
+
+                //LISTAGEM DE CLIENTES COM MAIS DE 1000 PONTOS
                 printf("CPF: %s; Nome: %s; Nascimento: %d/%d/%d; Idade: %d; End: %s; Cidade: %s; Estado: %s; Pontos: %d \n",
                        listCliente.cpf, listCliente.nomeClien, listCliente.nasc.dia, listCliente.nasc.mes,
                        listCliente.nasc.ano, listCliente.idade, listCliente.end, listCliente.cid, listCliente.est,

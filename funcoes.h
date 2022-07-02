@@ -4,20 +4,20 @@
 
 #ifndef MERCADO_DO_BAIRRO_FUNCOES_H
 #define MERCADO_DO_BAIRRO_FUNCOES_H
-//Funções para o submenu de clientes.
+//FUNÇÕES PARA SUBMENU CLIENTES
 void cadNovClien();
 void atuaPontos();
 void atualClien();
 void listar18a25();
 void listar1000();
 
-//Funções para submenu de vendas.
+//FUNÇÕES PARA SUBMENU DE VENDAS
 //void novaVenda();
 //void listNovaVen();
 
-//Funções para submenu de produtos.
+//FUNÇÕES PARA SUBMENU DE PRODUTOS
 void cadNovProd();
 void atualProd();
 void listarSet();
-//void estoqBaixo();
+void estoqBaixo();
 #endif //MERCADO_DO_BAIRRO_FUNCOES_H

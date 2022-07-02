@@ -23,24 +23,21 @@ void subMenuProdutos()
         scanf (" %d", &subMenu3);
         switch (subMenu3)
         {
-            case 1: //Caso escolha 1, a função para realizar cadastro de novo cliente é chamada.
+            case 1: //CHAMA A FUNÇÃO PARA CADASTRAR UM NOVO PRODUTO
                 cadNovProd();
                 break;
-            case 2: //Caso escolha 2, a função para atualizar informações do cliente é chamada.
+            case 2: //CHAMA A FUNÇÃO PARA ATUALIZAR AS INFORMAÇÕES DE UM PRODUTO
                 atualProd();
                 break;
-            case 3: //Caso escolha 3, a função para listar estoque por setor é chamada.
+            case 3: //CHAMA A FUNÇÃO PARA LISTAR PRODUTOS POR SETORES
                 listarSet();
                 break;
-            case 4: //Caso escolha 4, a função para listar produtos com estoque baixo é chamada.
-                system("cls");
-                printf ("LISTA DE PRODUTOS COM ESTOQUE BAIXO: \n");
-
-                system("pause");
+            case 4: //CHAMA A FUNÇÃO PARA LISTAR PRODUTOS COM ESTOQUE BAIXO
+                estoqBaixo();
                 break;
-            case 9: //Caso escolha 9, volta para o menu principal.
+            case 9: //VOLTA PARA O MENU PRINCIPAL
                 return;
-            default: //Caso entre com uma opção inválida, o usuário é avisado.
+            default: //OPÇÃO CASO ENTRE COM O VALOR DESCONHECIDO
                 system ("cls");
                 printf("COMANDO INVÁLIDO! \n");
                 system("pause");

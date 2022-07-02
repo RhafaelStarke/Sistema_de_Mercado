@@ -9,6 +9,8 @@
 void listarSet(){
     int estoq;
     do {
+
+        //MENU PARA ESCOLHA DE LISTA POR ESTOQUE
         system("cls");
         printf("\n\n**********ESTOQUES**********\n");
         printf("1. Higiene e Limpeza \n");
@@ -22,24 +24,24 @@ void listarSet(){
         scanf(" %d", &estoq);
 
         switch (estoq) {
-            case 1:
+            case 1: //CHAMA A FUNÇÃO PARA LISTAR O ESTOQUE DE HIGIENE E LIMPEZA
                 listarHigiene();
                 break;
-            case 2:
+            case 2: //CHAMA A FUNÇÃO PARA LISTAR O ESTOQUE DE BEBIDAS
                 listarBebs();
                 break;
-            case 3:
+            case 3: //CHAMA A FUNÇÃO PARA LISTAR O ESTOQUE DE FRIOS
                 listarFrios();
                 break;
-            case 4:
+            case 4: //CHAMA A FUNÇÃO PARA LISTAR O ESTOQUE DE PADARIA
                 listarPad();
                 break;
-            case 5:
+            case 5: //CHAMA A FUNÇÃO PARA LISTAR O ESTOQUE DE AÇOUGUE
                 listarAco();
                 break;
-            case 9:
+            case 9: //VOLTA PARA O SUBMENU DE PRODUTOS
                 return;
-            default:
+            default: //OPÇÃO CASO ENTRE COM O VALOR DESCONHECIDO
                 system("cls");
                 printf("COMANDO INVÁLIDO! \n");
                 system("pause");

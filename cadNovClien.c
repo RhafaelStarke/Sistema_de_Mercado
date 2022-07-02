@@ -22,7 +22,7 @@ void cadNovClien()
         struct tm tm = *localtime(&dataSist);
         do
         {
-            //Coleta de informações do cliente.
+            //COLETA DE INFORMAÇÕES DO CLIENTE
             system("cls");
             printf("\n\nCADASTRO DE NOVO CLIENTE: \n");
             printf("CPF: ");
@@ -64,7 +64,7 @@ void cadNovClien()
             scanf(" %[^\n]s", cliente.est);
             cliente.pontos = 0;
 
-            //Escrever as informações do cliente no arquivo.
+            //GRAVANDO AS INFORMAÇÕES DO CLIENTE NO ARQUIVO
             fwrite(&cliente, sizeof(TCliente), 1, arq);
             fflush(arq);
 

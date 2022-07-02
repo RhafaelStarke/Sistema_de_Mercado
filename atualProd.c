@@ -31,7 +31,7 @@ void atualProd()
             fread(&novoProduto, sizeof(TProduto), 1, arq);
             if(iden==novoProduto.idenProd) {
 
-                //Mostrar produto que será atualizado.
+                //MOSTRA O PRODUTO QUE TERÁ SEUS DADOS ATUALIZADOS
                 system("cls");
                 printf("PRODUTO COM IDENTIFICAÇÃO CORRESPONDENTE: \n");
                 printf("Identificação: %d \n", novoProduto.idenProd);
@@ -44,7 +44,8 @@ void atualProd()
                 do {
                     printf("Quer Mesmo Editar Este Produto [S/N]? ");
                     scanf(" %c", &edit);
-                    //Atualização do produto.
+
+                    //ATUALIZAÇÃO DOS DADOS DO PRODUTO
                     if ((edit == 'S') || (edit == 's')) {
                         system("cls");
                         printf("\n\nNova identificação: ");
@@ -60,6 +61,8 @@ void atualProd()
                               &novoProduto.dataVal.ano);
                         printf("Nova quantidade no estoque: ");
                         scanf(" %d", &novoProduto.qtdEstoq);
+
+                        //GRAVANDO AS INFORMAÇÕES ATUALIZADOS NO ARQUIVO
                         fseek(arq, sizeof(TProduto) * (iden - 1), SEEK_SET);
                         fwrite(&novoProduto, sizeof(TProduto), 1, arq);
                         fflush(arq);

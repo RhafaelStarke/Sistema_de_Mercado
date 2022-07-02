@@ -6,20 +6,19 @@
 #include <windows.h>
 #include "registros.h"
 
-void listarAco(){
+void estoqBaixo(){
     FILE *arq;
     TProduto produtos;
 
     system("cls");
-    printf("LISTA DE ESTOQUE DO SETOR AÇOUGUE: \n\n");
+    printf("LISTA DE ESTOQUE BAIXO: \n\n");
     arq = fopen("../Produtos.dat", "rb");
     if(arq!=NULL){
-        char setor[20]="Acougue";
         while (fread(&produtos, sizeof(TProduto), 1, arq)){
-            if(strcmp(setor, produtos.setor)==0) {
+            if(produtos.qtdEstoq<5) {
 
-                //LISTAGEM DE ESTOQUE DO SETOR DE AÇOUGUE
-                printf("Identificação: %d; Nome: %s; Preço: R$ %.2lf; Vencimento: %d/%d/%d; Estoque: %d; \n", produtos.idenProd, produtos.nome, produtos.preco, produtos.dataVal.dia, produtos.dataVal.mes, produtos.dataVal.ano, produtos.qtdEstoq);
+                //LISTAGEM DE PRODUTOS COM ESTOQUE BAIXO
+                printf("Identificação: %d; Setor: %s; Nome: %s; Preço: R$ %.2lf; Vencimento: %d/%d/%d; Estoque: %d; \n", produtos.idenProd, produtos.setor, produtos.nome, produtos.preco, produtos.dataVal.dia, produtos.dataVal.mes, produtos.dataVal.ano, produtos.qtdEstoq);
             }
         }
         system("pause");
