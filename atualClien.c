@@ -73,8 +73,6 @@ void atualClien()
                                 printf("DIGITE UM MÊS VÁLIDO! \n");
                             } else if ((cliente.nasc.ano < 0)) {
                                 printf("DIGITE UM ANO VÁLIDO! \n");
-                            } else {
-                                printf("DIGITE UMA DATA VÁLIDA! \n");
                             }
                         } while ((cliente.nasc.dia < 0) || (cliente.nasc.dia > 31) || (cliente.nasc.mes < 0) ||
                                  (cliente.nasc.mes > 12) || (cliente.nasc.ano < 0));
@@ -90,8 +88,8 @@ void atualClien()
                         scanf(" %[^\n]s", cliente.cid);
                         printf("Estado (EE): ");
                         scanf(" %[^\n]s", cliente.est);
-                        printf("Pontos: ");
-                        scanf(" %d", &cliente.pontos);
+
+                        //GRAVANDO OS DADOS ATUALIZADO NO ARQUIVO
                         fseek(arq, sizeof(TCliente) * flag, SEEK_SET);
                         fwrite(&cliente, sizeof(TCliente), 1, arq);
                         fflush(arq);
@@ -126,5 +124,6 @@ void atualClien()
         system("cls");
         printf ("ERRO NA ABERTURA DO ARQUIVO! \n");
         system("pause");
+        atualClien();
     }
 }

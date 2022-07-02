@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <windows.h>
 #include "funcoes.h"
 
 void subMenuClientes()
@@ -26,10 +25,7 @@ void subMenuClientes()
                 cadNovClien();
                 break;
             case 2:
-                system("cls");
-                printf ("\n\nATUALIZAÇÃO DE PONTOS DO CLIENTE: \n");
-
-                system( "pause");
+                atuaPontos();
                 break;
             case 3:
                 atualClien();

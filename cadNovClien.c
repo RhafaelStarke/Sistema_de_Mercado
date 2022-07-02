@@ -6,6 +6,7 @@
 #include <windows.h>
 #include <time.h>
 #include "registros.h"
+#include "funcoes.h"
 
 void cadNovClien()
 {
@@ -26,7 +27,6 @@ void cadNovClien()
             printf("\n\nCADASTRO DE NOVO CLIENTE: \n");
             printf("CPF: ");
             scanf(" %[^\n]s", cliente.cpf);
-
             printf("Nome completo: ");
             scanf(" %[^\n]s", cliente.nomeClien);
             do
@@ -73,6 +73,7 @@ void cadNovClien()
             printf("Quer cadastrar outro cliente? [S/N] ");
             scanf(" %c", &cad);
         }while((cad == 's')||(cad == 'S'));
+        fclose(arq);
     }
     else
     {
