@@ -16,4 +16,3 @@ B) Produtos que o cliente quer comprar;
 10. Mostrar os produtos com estoque abaixo de 5;
 11. Mostrar quantos clientes estão na faixa de idade entre 18 e 25 anos;
 12. mostrar uma listagem de produtos por setor.
-Sistema para mercado com funcionabilidades como:
