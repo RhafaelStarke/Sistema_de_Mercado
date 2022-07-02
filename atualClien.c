@@ -28,13 +28,13 @@ void atualClien()
         dataSist = time(NULL);
         struct tm tm = *localtime(&dataSist);
 
-        //Usuário entra com o CPF do cliente que terá suas informações modificadas.
+        //USUÁRIO ENTRA COM O CPF QUE TERÁ SEUS DADOS EDITADOS
         printf("Entre com o CPF do cliente que quer modificar as informações: \n");
         scanf(" %[^\n]s", cpf);
 
-        //Procurar CPF compatível.
         do
         {
+            //PROCURAR CPF COMPATÍVEL
             fseek(arq, sizeof(TCliente) * flag, SEEK_SET);
             fread(&cliente, sizeof(TCliente), 1, arq);
             if (strcmp(cpf, cliente.cpf) == 0)
@@ -42,7 +42,7 @@ void atualClien()
                 flag2 = true;
                 char edit = 'n';
 
-                //Mostrar, caso encontre, o cliente que terá seus dados atualizados.
+                //MOSTRAR, CASO ENCONTRE, O CLIENTE QUE TERÁ SEUS DADOS ATUALIZADOS
                 system("cls");
                 printf("CPF encontrado! \n");
                 printf("CPF: %s \n", cliente.cpf);
@@ -57,7 +57,8 @@ void atualClien()
                     printf("QUER MESMO EDITAR INFORMAÇÕES DESTE CLIENTE [S/N]? ");
                     scanf(" %c", &edit);
                     if ((edit == 's') || (edit == 'S')) {
-                        //Atualização de dados do cliente.
+
+                        //ATUALIZAÇÃO DOS DADOS DO CLIENTE
                         system("cls");
                         printf("\n\nATUALIZAÇÃO DOS DADOS DO CLIENTE: %s \n", cliente.nomeClien);
                         printf("CPF: ");
@@ -89,7 +90,7 @@ void atualClien()
                         printf("Estado (EE): ");
                         scanf(" %[^\n]s", cliente.est);
 
-                        //GRAVANDO OS DADOS ATUALIZADO NO ARQUIVO
+                        //GRAVANDO OS DADOS ATUALIZADOS NO ARQUIVO
                         fseek(arq, sizeof(TCliente) * flag, SEEK_SET);
                         fwrite(&cliente, sizeof(TCliente), 1, arq);
                         fflush(arq);
@@ -106,6 +107,8 @@ void atualClien()
             }
             flag += 1;
         }while(feof(arq) == false);
+
+        //CASO NÃO ENCONTRE NENHUM CPF, PODE SER REDIRECIONADO PARA A FUNÇÃO QUE CADASTRA CLIENTES
         if (flag2 == false)
         {
             char cad;
