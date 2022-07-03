@@ -22,7 +22,7 @@ void venda(){
     //ENTRADA DO CPF DO CLIENTE
     system("cls");
     printf("\n\nREALIZAR NOVA VENDA: \n");
-    printf("Entre com a identificação [-1] para sair. \n");
+    printf("Entre com a identificação [0] para sair. \n");
     printf("\n\nCPF do cliente: ");
     scanf(" %[^\n]s", venda.cpf);
     arqCliente = fopen("../Clientes.dat", "rb");
@@ -37,11 +37,9 @@ void venda(){
                 if(arqProduto!=NULL){
                     do {
                         printf("Identificação do produto: ");
-                        scanf(" %d", &venda.idenVenda);
+                        scanf("%d", &venda.idenVenda);
 
-                        do{
-                            fseek(arqProduto, sizeof(TProduto)*point, SEEK_SET);
-                            fread(&produto, sizeof(TProduto), 1, arqProduto);
+                        while(fread(&produto, sizeof(TProduto), 1, arqProduto)){
 
                             //VERIFICAÇÃO DA IDENTIFICAÇÃO DO PRODUTO
                             if (venda.idenVenda==produto.idenProd) {
@@ -49,7 +47,7 @@ void venda(){
                                 printf("Nome: %s; Preço: %.2lf; QTD: %d; \n", produto.nome, produto.preco,
                                        produto.qtdEstoq);
                                 printf("Quantidade: ");
-                                scanf(" %d", &venda.qtdProd);
+                                scanf("%d", &venda.qtdProd);
 
                                 //VERIFICAÇÃO DE ESTOQUE
                                 if(produto.qtdEstoq>=venda.qtdProd) {
@@ -62,8 +60,11 @@ void venda(){
                                     printf("Não há qtd disponível do produto! \n");
                                 }
                             }
+                            else if(venda.idenVenda==0){
+                                flagIden=true;
+                            }
                             point+=1;
-                        }while(feof(arqProduto) == false);
+                        }
                         fclose(arqProduto);
                         if (flagIden==false){
 
@@ -77,7 +78,7 @@ void venda(){
                                 cadNovProd();
                             }
                         }
-                    } while (venda.idenVenda>0);
+                    } while (venda.idenVenda!=0);
                 }
                 else{
                     system("cls");
