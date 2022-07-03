@@ -13,7 +13,7 @@ void listar1000();
 
 //FUNÇÕES PARA SUBMENU DE VENDAS
 void venda();
-//void listNovaVen();
+void listarVendas();
 
 //FUNÇÕES PARA SUBMENU DE PRODUTOS
 void cadNovProd();

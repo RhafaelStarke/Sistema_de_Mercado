@@ -100,7 +100,7 @@ void atualProd()
                         system("pause");
                         return;
                     } else if ((edit == 'n') || (edit == 'N')) {
-                        subMenuProdutos();
+                        return;
                     } else {
                         printf("COMANDO INVÁLIDO! \n");
                     }

@@ -24,10 +24,7 @@ void subMenuVendas()
                 venda();
                 break;
             case 2:
-                system("cls");
-                printf ("\n\nLISTA DE NOVA VENDA DO CLIENTE: \n");
-
-                system("pause");
+                listarVendas();
                 break;
             case 9:
                 return;

@@ -10,30 +10,84 @@
 
 void venda(){
     FILE *arqProduto;
+    FILE *arqVendas;
     FILE *arqCliente;
-    char cpf[13];
+    TVenda venda;
     TCliente cliente;
-    bool flag=false;
+    TProduto produto;
+    bool flagCpf=false;
+    bool flagIden;
+    int point=0;
 
     //ENTRADA DO CPF DO CLIENTE
     system("cls");
-    printf("REALIZAR NOVA VENDA: \n");
-    printf("CPF do cliente: ");
-    scanf(" %[^\n]s", cpf);
+    printf("\n\nREALIZAR NOVA VENDA: \n");
+    printf("Entre com a identificação [-1] para sair. \n");
+    printf("\n\nCPF do cliente: ");
+    scanf(" %[^\n]s", venda.cpf);
     arqCliente = fopen("../Clientes.dat", "rb");
     if (arqCliente!=NULL){
         while (fread(&cliente, sizeof(TCliente), 1, arqCliente)){
 
             //VERIFICAÇÃO SE O CLIENTE É CADASTRADO
-            if (strcmp(cpf, cliente.cpf) == 0){
-                flag=true;
+            if (strcmp(venda.cpf, cliente.cpf) == 0){
+                flagCpf=true;
 
-                
+                arqProduto = fopen("../Produtos.dat", "r+b");
+                if(arqProduto!=NULL){
+                    do {
+                        printf("Identificação do produto: ");
+                        scanf(" %d", &venda.idenVenda);
 
-                return;
+                        do{
+                            fseek(arqProduto, sizeof(TProduto)*point, SEEK_SET);
+                            fread(&produto, sizeof(TProduto), 1, arqProduto);
+
+                            //VERIFICAÇÃO DA IDENTIFICAÇÃO DO PRODUTO
+                            if (venda.idenVenda==produto.idenProd) {
+                                flagIden=true;
+                                printf("Nome: %s; Preço: %.2lf; QTD: %d; \n", produto.nome, produto.preco,
+                                       produto.qtdEstoq);
+                                printf("Quantidade: ");
+                                scanf(" %d", &venda.qtdProd);
+
+                                //VERIFICAÇÃO DE ESTOQUE
+                                if(produto.qtdEstoq>=venda.qtdProd) {
+                                    produto.qtdEstoq=produto.qtdEstoq-venda.qtdProd;
+                                    fseek(arqProduto, sizeof(TProduto)*point, SEEK_SET);
+                                    fwrite(&produto, sizeof(TProduto), 1, arqProduto);
+                                    fflush(arqProduto);
+                                }
+                                else{
+                                    printf("Não há qtd disponível do produto! \n");
+                                }
+                            }
+                            point+=1;
+                        }while(feof(arqProduto) == false);
+                        fclose(arqProduto);
+                        if (flagIden==false){
+
+                            //CASO NÃO SEJA CADASTRADO, PODE SER REDIRECIONADO PARA A FUNÇÃO QUE CADASTRA
+                            char cad2;
+                            system("cls");
+                            printf("PRODUTO NÃO ENCONTRADO! \n");
+                            printf("Deseja cadastrar um novo produto? [S/N] ");
+                            scanf(" %c", &cad2);
+                            if ((cad2=='s')||(cad2=='S')){
+                                cadNovProd();
+                            }
+                        }
+                    } while (venda.idenVenda>0);
+                }
+                else{
+                    system("cls");
+                    printf ("ERRO NA ABERTURA DO ARQUIVO! \n");
+                    system("pause");
+                }
             }
         }
-        if(flag==false){
+        fclose(arqCliente);
+        if(flagCpf==false){
 
             //CASO NÃO SEJA, PODE SER REDIRECIONADO PARA A FUNÇÃO QUE CADASTRA
             char cad;

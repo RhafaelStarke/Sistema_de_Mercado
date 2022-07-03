@@ -26,4 +26,4 @@ add_executable(Mercado_do_Bairro
         listarPad.c
         listarAco.c
         estoqBaixo.c
-        venda.c)
+        venda.c listarVendas.c)
