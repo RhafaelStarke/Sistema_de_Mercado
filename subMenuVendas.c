@@ -21,10 +21,7 @@ void subMenuVendas()
         switch (subMenu1)
         {
             case 1:
-                system("cls");
-                printf ("\n\nREALIZAR NOVA VENDA: \n");
-
-                system("pause");
+                venda();
                 break;
             case 2:
                 system("cls");
@@ -34,7 +31,6 @@ void subMenuVendas()
                 break;
             case 9:
                 return;
-                break;
             default:
                 system("cls");
                 printf ("COMANDO INVÁLIDO! \n");

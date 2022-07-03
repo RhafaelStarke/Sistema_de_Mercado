@@ -96,9 +96,11 @@ void atualClien()
                         system("cls");
                         printf("DADOS DO CLIENTE ATUALIZADO COM SUCESSO! \n");
                         system("pause");
-                        subMenuClientes();
+                        fclose(arq);
+                        return;
                     } else if ((edit == 'n') || (edit == 'N')) {
-                        atualClien();
+                        fclose(arq);
+                        return;
                     } else {
                         printf("COMANDO INVÁLIDO! \n");
                     }
@@ -106,6 +108,7 @@ void atualClien()
             }
             flag += 1;
         }while(feof(arq) == false);
+        fclose(arq);
 
         //CASO NÃO ENCONTRE NENHUM CPF, PODE SER REDIRECIONADO PARA A FUNÇÃO QUE CADASTRA CLIENTES
         if (flag2 == false)

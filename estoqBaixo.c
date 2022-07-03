@@ -22,6 +22,7 @@ void estoqBaixo(){
             }
         }
         system("pause");
+        fclose(arq);
     }
     else{
         system("cls");

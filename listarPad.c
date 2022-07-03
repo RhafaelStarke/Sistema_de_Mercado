@@ -23,6 +23,7 @@ void listarPad(){
             }
         }
         system("pause");
+        fclose(arq);
     }
     else{
         system("cls");

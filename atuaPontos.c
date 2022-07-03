@@ -59,9 +59,11 @@ void atuaPontos(){
                         system("cls");
                         printf("PONTOS DO CLIENTE ATUALIZADO COM SUCESSO! \n");
                         system("pause");
-                        subMenuClientes();
+                        fclose(arq);
+                        return;
                     } else if ((edit == 'n') || (edit == 'N')) {
-                        atuaPontos();
+                        fclose(arq);
+                        return;
                     } else {
                         printf("COMANDO INVÁLIDO! \n");
                     }
@@ -69,6 +71,7 @@ void atuaPontos(){
             }
             flag+=1;
         } while(feof(arq)==false);
+        fclose(arq);
 
         //CASO NÃO ENCONTRE NENHUM CPF, PODE SER REDIRECIONADO PARA A FUNÇÃO QUE CADASTRA CLIENTE
         if (flag2==false)

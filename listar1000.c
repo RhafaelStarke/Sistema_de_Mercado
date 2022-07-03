@@ -26,6 +26,7 @@ void listar1000(){
             }
         }
         system("pause");
+        fclose(arq);
     }
     else{
         system("cls");

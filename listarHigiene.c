@@ -23,6 +23,7 @@ void listarHigiene(){
             }
         }
         system("pause");
+        fclose(arq);
     }
     else{
         system("cls");

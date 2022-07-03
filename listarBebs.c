@@ -23,6 +23,7 @@ void listarBebs(){
             }
         }
         system("pause");
+        fclose(arq);
     }
     else{
         system("cls");
