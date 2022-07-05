@@ -7,6 +7,7 @@
 #include <stdbool.h>
 #include "subMenu.h"
 #include "registros.h"
+#include "funcoes.h"
 
 void atualProd()
 {
@@ -22,6 +23,7 @@ void atualProd()
         TProduto produto, novoProduto;
         char edit = 'n';
         int set;
+        bool flagIden=false;
 
         //USUÁRIO ENTRA COM A IDENTIFICAÇÃO DO PRODUTO QUE SERÁ ATUALIZADO
         system("cls");
@@ -33,6 +35,7 @@ void atualProd()
             if(iden==novoProduto.idenProd) {
 
                 //MOSTRA O PRODUTO QUE TERÁ SEUS DADOS ATUALIZADOS
+                flagIden = true;
                 system("cls");
                 printf("PRODUTO COM IDENTIFICAÇÃO CORRESPONDENTE: \n");
                 printf("Identificação: %d \n", novoProduto.idenProd);
@@ -108,6 +111,24 @@ void atualProd()
             }
             flag+=1;
         }while(feof(arq) == false);
+        if (flagIden==false){
+            char cad;
+            system("cls");
+            printf("NENHUM PRODUTO FOI ENCONTRADO COM ESSA IDENTIFICAÇÃO! \n");
+            system("pause");
+            do {
+                printf("Deseja cadastrar um novo produto [S/N]? ");
+                scanf(" %c", &cad);
+                if ((cad == 's') || (cad == 'S')) {
+                    cadNovProd();
+                    return;
+                } else if ((cad == 'n') || (cad == 'N')) {
+                    return;
+                } else {
+                    printf("Comando inválido! \n");
+                }
+            } while (1);
+        }
     }
     else
     {

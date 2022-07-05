@@ -7,7 +7,6 @@
 #include <string.h>
 #include <stdbool.h>
 #include <time.h>
-#include "subMenu.h"
 #include "registros.h"
 #include "funcoes.h"
 
@@ -36,8 +35,7 @@ void atualClien()
             //PROCURAR CPF COMPATÍVEL
             fseek(arq, sizeof(TCliente) * flag, SEEK_SET);
             fread(&cliente, sizeof(TCliente), 1, arq);
-            if (strcmp(cpf, cliente.cpf) == 0)
-            {
+            if (strcmp(cpf, cliente.cpf) == 0){
                 flag2 = true;
                 char edit = 'n';
 
@@ -116,12 +114,18 @@ void atualClien()
             char cad;
             system("cls");
             printf ("NENHUM CPF ENCONTRADO! \n");
-            printf ("Deseja cadastrar um novo cliente [S/N]? ");
-            scanf(" %c", &cad);
-            if ((cad=='s')||(cad=='S'))
-            {
-                cadNovClien();
-            }
+            do {
+                printf("Deseja cadastrar um novo cliente [S/N]? ");
+                scanf(" %c", &cad);
+                if ((cad == 's') || (cad == 'S')) {
+                    cadNovClien();
+                    return;
+                } else if ((cad == 'n') || (cad == 'N')) {
+                    return;
+                } else {
+                    printf("Comando inválido! \n");
+                }
+            } while (1);
         }
     }
     else

@@ -4,11 +4,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <windows.h>
+#include <stdbool.h>
 #include "registros.h"
 
 void estoqBaixo(){
     FILE *arq;
     TProduto produtos;
+    bool flag=false;
 
     system("cls");
     printf("LISTA DE ESTOQUE BAIXO: \n\n");
@@ -18,8 +20,12 @@ void estoqBaixo(){
             if(produtos.qtdEstoq<5) {
 
                 //LISTAGEM DE PRODUTOS COM ESTOQUE BAIXO
+                flag=true;
                 printf("Identificação: %d; Setor: %s; Nome: %s; Preço: R$ %.2lf; Vencimento: %d/%d/%d; Estoque: %d; \n", produtos.idenProd, produtos.setor, produtos.nome, produtos.preco, produtos.dataVal.dia, produtos.dataVal.mes, produtos.dataVal.ano, produtos.qtdEstoq);
             }
+        }
+        if(flag==false){
+            printf("Nenhum produto com estoque baixo! \n\n");
         }
         system("pause");
         fclose(arq);

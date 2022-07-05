@@ -37,7 +37,7 @@ void venda(){
                 if(arqProduto!=NULL){
                     do {
                         printf("Identificação do produto: ");
-                        scanf("%d", &venda.idenVenda);
+                        scanf(" %d", &venda.idenVenda);
 
                         while(fread(&produto, sizeof(TProduto), 1, arqProduto)){
 
@@ -47,7 +47,7 @@ void venda(){
                                 printf("Nome: %s; Preço: %.2lf; QTD: %d; \n", produto.nome, produto.preco,
                                        produto.qtdEstoq);
                                 printf("Quantidade: ");
-                                scanf("%d", &venda.qtdProd);
+                                scanf(" %d", &venda.qtdProd);
 
                                 //VERIFICAÇÃO DE ESTOQUE
                                 if(produto.qtdEstoq>=venda.qtdProd) {
