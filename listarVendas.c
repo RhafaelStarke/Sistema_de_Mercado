@@ -30,7 +30,7 @@ void listarVendas(){
                         flag=true;
                         system("cls");
                         printf("COMPRA ENCONTRADA! \n");
-                        printf("Data da compra: %d/%d/%d; Valor Total: %.2f; Qtd Total: %d \n", vendas.dataCompr.dia, vendas.dataCompr.mes, vendas.dataCompr.ano, vendas.valorTot, vendas.qtdProd);
+                        printf("Data da compra: %d/%d/%d; \tValor Total: %.2f; \tQtd Total: %d \n", vendas.dataCompr.dia, vendas.dataCompr.mes, vendas.dataCompr.ano, vendas.valorTot, vendas.qtdProd);
                     }
                 }
             }

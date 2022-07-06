@@ -52,8 +52,6 @@ void atualProd()
                     //ATUALIZAÇÃO DOS DADOS DO PRODUTO
                     if ((edit == 'S') || (edit == 's')) {
                         system("cls");
-                        printf("\n\nNova identificação: ");
-                        scanf(" %d", &novoProduto.idenProd);
                         printf("Setores de produtos: \n");
                         printf("1. Higiene e Limpeza \n");
                         printf("2. Bebidas \n");
@@ -114,8 +112,7 @@ void atualProd()
         if (flagIden==false){
             char cad;
             system("cls");
-            printf("NENHUM PRODUTO FOI ENCONTRADO COM ESSA IDENTIFICAÇÃO! \n");
-            system("pause");
+            printf("\n\nNENHUM PRODUTO FOI ENCONTRADO COM ESSA IDENTIFICAÇÃO! \n");
             do {
                 printf("Deseja cadastrar um novo produto [S/N]? ");
                 scanf(" %c", &cad);

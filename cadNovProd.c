@@ -11,32 +11,31 @@ void cadNovProd()
 {
     char cad;
     int set;
+    int cod=1;
     FILE *arq;
     TProduto produtos, prodLidos;
 
     arq = fopen ("../Produtos.dat", "ab+");
     if (arq != NULL)
     {
+        while (fread(&produtos, sizeof(TProduto), 1, arq)){
+            cod+=1;
+        }
+
         do
         {
             //COLETA DE INFORMAÇÕES DO NOVO PRODUTO
             system("cls");
-            printf ("\n\nCADASTRO DE NOVO PRODUTO: \n");
-            do {
-                printf("\n\nIdentificação: ");
-                scanf(" %d", &produtos.idenProd);
-                if (produtos.idenProd < 0) {
-                    printf("DIGITE UMA IDENTIFICAÇÃO VÁLIDA! \n");
-                }
-            } while (produtos.idenProd < 0);
-            printf("Setores de produtos: \n");
+            printf ("\n\nCADASTRO DE NOVO PRODUTO: \n\n");
+            produtos.idenProd=cod;
+            printf("Setores:\n");
             printf("1. Higiene e Limpeza \n");
             printf("2. Bebidas \n");
             printf("3. Frios \n");
             printf("4. Padaria \n");
             printf("5. Açougue \n");
             do{
-                printf("Setor: ");
+                printf("\nCadastrar novo produto no setor: ");
                 scanf(" %d", &set);
                 switch (set) {
                     case 1:
@@ -59,6 +58,7 @@ void cadNovProd()
                         break;
                 }
             } while ((set<1)||(set>5));
+            system("cls");
             printf("Nome: ");
             scanf(" %[^\n]s", produtos.nome);
             printf("Preço: ");
@@ -83,6 +83,7 @@ void cadNovProd()
             printf("PRODUTO CADASTRADO COM SUCESSO! \n");
             printf("Quer cadastrar outro produto? [S/N] ");
             scanf(" %c", &cad);
+            cod+=1;
         } while((cad == 's')||(cad == 'S'));
         fclose (arq);
     }

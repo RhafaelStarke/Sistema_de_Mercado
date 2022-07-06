@@ -17,14 +17,21 @@ void cadNovClien()
     {
         TCliente cliente;
         char cad;
+        int cod;
         time_t dataSist;
         dataSist = time(NULL);
         struct tm tm = *localtime(&dataSist);
+
+        while (fread(&cliente, sizeof(TCliente), 1, arq)){
+            cod+=1;
+        }
+
         do
         {
             //COLETA DE INFORMAÇÕES DO CLIENTE
             system("cls");
             printf("\n\nCADASTRO DE NOVO CLIENTE: \n");
+            cliente.cod=cod;
             printf("CPF: ");
             scanf(" %[^\n]s", cliente.cpf);
             printf("Nome completo: ");
@@ -72,6 +79,7 @@ void cadNovClien()
             printf("CLIENTE CADASTRADO COM SUCESSO! \n");
             printf("Quer cadastrar outro cliente? [S/N] ");
             scanf(" %c", &cad);
+            cod+=1;
         }while((cad == 's')||(cad == 'S'));
         fclose(arq);
     }

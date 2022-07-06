@@ -2,6 +2,7 @@
 // Created by rh4f4 on 03/07/2022.
 //
 #include <stdio.h>
+#include <time.h>
 #include <stdlib.h>
 #include <stdbool.h>
 #include <windows.h>
@@ -9,101 +10,118 @@
 #include "funcoes.h"
 
 void venda(){
-    FILE *arqProduto;
+
     FILE *arqVendas;
     FILE *arqCliente;
+    FILE *arqProdutos;
     TVenda venda;
     TCliente cliente;
     TProduto produto;
-    bool flagCpf=false;
-    bool flagIden;
-    int point=0;
+    TItensCompra itensCompra;
+    time_t t = time(NULL);
+    struct tm dataSist=*localtime(&t);
+    int cod=1, cad, exis, cont;
 
-    //ENTRADA DO CPF DO CLIENTE
-    system("cls");
-    printf("\n\nREALIZAR NOVA VENDA: \n");
-    printf("Entre com a identificação [0] para sair. \n");
-    printf("\n\nCPF do cliente: ");
-    scanf(" %[^\n]s", venda.cpf);
-    arqCliente = fopen("../Clientes.dat", "rb");
-    if (arqCliente!=NULL){
-        while (fread(&cliente, sizeof(TCliente), 1, arqCliente)){
-
-            //VERIFICAÇÃO SE O CLIENTE É CADASTRADO
-            if (strcmp(venda.cpf, cliente.cpf) == 0){
-                flagCpf=true;
-
-                arqProduto = fopen("../Produtos.dat", "r+b");
-                if(arqProduto!=NULL){
-                    do {
-                        printf("Identificação do produto: ");
-                        scanf(" %d", &venda.idenVenda);
-
-                        while(fread(&produto, sizeof(TProduto), 1, arqProduto)){
-
-                            //VERIFICAÇÃO DA IDENTIFICAÇÃO DO PRODUTO
-                            if (venda.idenVenda==produto.idenProd) {
-                                flagIden=true;
-                                printf("Nome: %s; Preço: %.2lf; QTD: %d; \n", produto.nome, produto.preco,
-                                       produto.qtdEstoq);
-                                printf("Quantidade: ");
-                                scanf(" %d", &venda.qtdProd);
-
-                                //VERIFICAÇÃO DE ESTOQUE
-                                if(produto.qtdEstoq>=venda.qtdProd) {
-                                    produto.qtdEstoq=produto.qtdEstoq-venda.qtdProd;
-                                    fseek(arqProduto, sizeof(TProduto)*point, SEEK_SET);
-                                    fwrite(&produto, sizeof(TProduto), 1, arqProduto);
-                                    fflush(arqProduto);
-                                }
-                                else{
-                                    printf("Não há qtd disponível do produto! \n");
-                                }
-                            }
-                            else if(venda.idenVenda==0){
-                                flagIden=true;
-                            }
-                            point+=1;
-                        }
-                        fclose(arqProduto);
-                        if (flagIden==false){
-
-                            //CASO NÃO SEJA CADASTRADO, PODE SER REDIRECIONADO PARA A FUNÇÃO QUE CADASTRA
-                            char cad2;
-                            system("cls");
-                            printf("PRODUTO NÃO ENCONTRADO! \n");
-                            printf("Deseja cadastrar um novo produto? [S/N] ");
-                            scanf(" %c", &cad2);
-                            if ((cad2=='s')||(cad2=='S')){
-                                cadNovProd();
-                            }
-                        }
-                    } while (venda.idenVenda!=0);
-                }
-                else{
-                    system("cls");
-                    printf ("ERRO NA ABERTURA DO ARQUIVO! \n");
-                    system("pause");
-                }
-            }
-        }
-        fclose(arqCliente);
-        if(flagCpf==false){
-
-            //CASO NÃO SEJA, PODE SER REDIRECIONADO PARA A FUNÇÃO QUE CADASTRA
-            char cad;
-            system("cls");
-            printf ("CPF NÃO ENCONTRADO! \n");
-            printf("Deseja cadastrar o cliente? [S/N] ");
-            scanf(" %c", &cad);
-            if((cad=='s')||(cad=='S')){
-                cadNovClien();
-            }
+    if(arqVendas){
+        while(fread(&venda, sizeof(TVenda), 1, arqVendas)){
+            cod+=1;
         }
     }
-    else{
+
+    arqVendas= fopen("../Vendas.dat", "ab");
+
+    if (arqVendas){
+        venda.idenVenda=cod;
+        venda.qtdProd=0;
+        printf("CPF: ");
+        scanf(" %[^\n]s", venda.cpf);
+        cad=1;
+        arqCliente= fopen("../Clientes.dat", "rb");
+        if (arqCliente){
+            while(fread(&cliente, sizeof(TCliente), 1, arqCliente)&&(cad==1)){
+                if (strcmp(venda.cpf, cliente.cpf)==0){
+                    cad=0;
+                }
+            }
+            fclose(arqCliente);
+        }
+        if (cad==1){
+            char simOUnao;
+            system("cls");
+            printf("NENHUM CPF ENCONTRADO!");
+            do {
+                printf("Deseja cadastrar novo cliente? \n");
+                scanf(" %c", &simOUnao);
+                if ((simOUnao=='s')||(simOUnao=='S')){
+                    cadNovClien();
+                    return;
+                }
+                else if ((simOUnao=='n')||(simOUnao=='N')) {
+                    return;
+                }
+                else{
+                    printf("Comando inválido! \n");
+                }
+            } while (1);
+        }
+        venda.dataCompr.dia=dataSist.tm_mday;
+        venda.dataCompr.mes=dataSist.tm_mon+1;
+        venda.dataCompr.ano=dataSist.tm_year+1900;
         system("cls");
-        printf ("ERRO NA ABERTURA DO ARQUIVO! \n");
-        system("pause");
+        do{
+            printf("Código do produto: ");
+            scanf(" %d", &itensCompra.codProd);
+            arqProdutos = fopen("../Produtos.dat", "rb+");
+            if(arqProdutos){
+                exis=0;
+                while ((exis==0)&&(fread(&produto, sizeof(TProduto), 1, arqProdutos))){
+                    if(itensCompra.codProd==produto.idenProd){
+                        exis=1;
+                    }
+                }
+                if(exis==1){
+                    if (produto.qtdEstoq>0){
+                        printf("\n%s \tR$ %.2lf \t%d Unidades\n\n", produto.nome, produto.preco, produto.qtdEstoq);
+                        printf("Quantidade: ");
+                        scanf(" %d", &itensCompra.qtd);
+                        if(itensCompra.qtd<=produto.qtdEstoq){
+                            produto.qtdEstoq=produto.qtdEstoq-itensCompra.qtd;
+                            fseek(arqProdutos, (produto.idenProd-1)* sizeof(TProduto), SEEK_SET);
+                            fwrite(&produto, sizeof(TProduto), 1, arqProdutos);
+                            venda.qtdProd++;
+                            itensCompra.precoUni=(float)produto.preco;
+                            itensCompra.precoTot=itensCompra.precoUni*(float)itensCompra.qtd;
+                            venda.valorTot+=itensCompra.precoTot;
+                            system("cls");
+                        }else{
+                            system("cls");
+                            printf("Não há quantidade disponível do produto! \n");
+                        }
+                    }else{
+                        system("cls");
+                        printf("Não há quantidade disponível do produto! \n");
+                    }
+                }else{
+                    system("cls");
+                    printf("Código inválido! \n");
+                }
+                fclose(arqProdutos);
+            }
+            printf("Digite 1 para continuar a compra, ou qualquer outro para finalizar: ");
+            scanf(" %d", &cont);
+        } while (cont==1);
+        arqCliente = fopen("../Clientes.dat", "rb+");
+        if(arqCliente){
+            cliente.pontos+=(int)venda.valorTot;
+            fseek(arqCliente, (cliente.cod-1)*sizeof(TCliente), SEEK_SET);
+            fwrite(&cliente, sizeof(TCliente), 1, arqCliente);
+            fclose(arqCliente);
+        }
+        fwrite(&venda, sizeof(TVenda), 1, arqVendas);
+        fclose(arqVendas);
+        system("cls");
+    } else{
+        system("cls");
+        printf("ERRO NA ABERTURA DO ARQUIVO! \n");
     }
 }

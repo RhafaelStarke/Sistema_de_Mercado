@@ -37,5 +37,10 @@ typedef struct TCliente
     char cid[50];
     char est[2];
     int pontos;
+    int cod;
 } TCliente;
+typedef struct TItensCompra {
+    int codProd, qtd;
+    float precoUni, precoTot;
+} TItensCompra;
 #endif //MERCADO_DO_BAIRRO_REGISTROS_H

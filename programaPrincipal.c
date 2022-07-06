@@ -34,9 +34,6 @@ int main ()
                 subMenuProdutos();
                 break;
             case 9: //OPÇÃO PARA SAIR
-                system ("cls");
-                printf ("\nPROGRAMA ENCERRADO PELO USUÁRIO! \n");
-                system ("pause");
                 return;
                 break;
             default: //OPÇÃO CASO ENTRE COM UM VALOR DESCONHECIDO
