@@ -15,7 +15,7 @@ void atuaPontos(){
     FILE *arq;
 
     system("cls");
-    printf("ATUALIZAR PONTUAÇÃO DO CLIENTE: \n");
+    printf("\n\nATUALIZAR PONTUAÇÃO DO CLIENTE: \n\n");
     arq = fopen("../Clientes.dat", "r+b");
     if(arq != NULL)
     {
@@ -37,19 +37,19 @@ void atuaPontos(){
 
                 //MOSTRAR, CASO ENCONTRE, OS DADOS DO CLIENTE QUE TERÁ SEUS PONTOS EDITADOS
                 system("cls");
-                printf("CPF encontrado! \n");
+                printf("\n\nCPF encontrado! \n\n");
                 printf("CPF: %s \n", cliente.cpf);
                 printf("Nome: %s \n", cliente.nomeClien);
                 printf("Pontos: %d \n", cliente.pontos);
                 do {
-                    printf("QUER MESMO EDITAR OS PONTOS DESTE CLIENTE [S/N]? ");
+                    printf("\nQUER MESMO EDITAR OS PONTOS DESTE CLIENTE [S/N]? ");
                     scanf(" %c", &edit);
                     if ((edit == 's') || (edit == 'S')) {
 
                         //ATUALIZAÇÃO DOS PONTOS DO CLIENTE
                         system("cls");
                         printf("\n\nATUALIZANDO PONTOS DO CLIENTE: %s \n", cliente.nomeClien);
-                        printf("Pontos: ");
+                        printf("\nPontos: ");
                         scanf(" %d", &cliente.pontos);
 
                         //GRAVANDO OS DADOS ATUALIZADO NO ARQUIVO
@@ -57,7 +57,7 @@ void atuaPontos(){
                         fwrite(&cliente, sizeof(TCliente), 1, arq);
                         fflush(arq);
                         system("cls");
-                        printf("PONTOS DO CLIENTE ATUALIZADO COM SUCESSO! \n");
+                        printf("\n\nPONTOS DO CLIENTE ATUALIZADO COM SUCESSO! \n\n");
                         system("pause");
                         fclose(arq);
                         return;
@@ -65,7 +65,7 @@ void atuaPontos(){
                         fclose(arq);
                         return;
                     } else {
-                        printf("COMANDO INVÁLIDO! \n");
+                        printf("\nCOMANDO INVÁLIDO! \n");
                     }
                 } while(1);
             }
@@ -91,6 +91,7 @@ void atuaPontos(){
     {
         system("cls");
         printf("ERRO NA ABERTURA DO ARQUIVO! \n");
+        printf("\n");
         system("pause");
         atuaPontos();
     }

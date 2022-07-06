@@ -27,6 +27,7 @@ void estoqBaixo(){
         if(flag==false){
             printf("Nenhum produto com estoque baixo! \n\n");
         }
+        printf("\n");
         system("pause");
         fclose(arq);
     }

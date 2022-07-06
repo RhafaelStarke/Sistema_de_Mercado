@@ -59,7 +59,7 @@ void cadNovProd()
                 }
             } while ((set<1)||(set>5));
             system("cls");
-            printf("Nome: ");
+            printf("\n\nNome: ");
             scanf(" %[^\n]s", produtos.nome);
             printf("Preço: ");
             scanf(" %lf", &produtos.preco);
@@ -71,7 +71,7 @@ void cadNovProd()
                 scanf(" %d", &produtos.qtdEstoq);
                 if(produtos.qtdEstoq < 0)
                 {
-                    printf("DIGITE UMA QUANTIDADE POSITIVA! \n");
+                    printf("\nDIGITE UMA QUANTIDADE POSITIVA! \n\n");
                 }
             }while(produtos.qtdEstoq < 0);
 
@@ -80,7 +80,7 @@ void cadNovProd()
             fflush (arq);
 
             system("cls");
-            printf("PRODUTO CADASTRADO COM SUCESSO! \n");
+            printf("\n\nPRODUTO CADASTRADO COM SUCESSO! \n\n");
             printf("Quer cadastrar outro produto? [S/N] ");
             scanf(" %c", &cad);
             cod+=1;
@@ -90,7 +90,7 @@ void cadNovProd()
     else
     {
         system("cls");
-        printf ("ERRO NA ABERTURA DO ARQUIVO! \n");
+        printf ("\n\nERRO NA ABERTURA DO ARQUIVO! \n\n");
         system("pause");
     }
 }

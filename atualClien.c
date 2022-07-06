@@ -15,7 +15,7 @@ void atualClien()
     FILE *arq;
 
     system("cls");
-    printf("ATUALIZAÇÃO DE DADOS DO CLIENTE: \n");
+    printf("\n\nATUALIZAÇÃO DE DADOS DO CLIENTE: \n");
     arq = fopen("../Clientes.dat", "r+b");
     if (arq != NULL)
     {
@@ -28,7 +28,7 @@ void atualClien()
         struct tm tm = *localtime(&dataSist);
 
         //USUÁRIO ENTRA COM O CPF QUE TERÁ SEUS DADOS EDITADOS
-        printf("Entre com o CPF do cliente que quer modificar as informações: \n");
+        printf("\n\nEntre com o CPF do cliente que quer modificar as informações: ");
         scanf(" %[^\n]s", cpf);
         do
         {
@@ -41,8 +41,8 @@ void atualClien()
 
                 //MOSTRAR, CASO ENCONTRE, O CLIENTE QUE TERÁ SEUS DADOS ATUALIZADOS
                 system("cls");
-                printf("CPF encontrado! \n");
-                printf("CPF: %s \n", cliente.cpf);
+                printf("\n\nCPF ENCONTRADO! \n");
+                printf("\nCPF: %s \n", cliente.cpf);
                 printf("Nome: %s \n", cliente.nomeClien);
                 printf("Data de nascimento: %d/%d/%d \n", cliente.nasc.dia, cliente.nasc.mes, cliente.nasc.ano);
                 printf("Idade: %d Anos \n", cliente.idade);
@@ -51,14 +51,14 @@ void atualClien()
                 printf("Estado: %s \n", cliente.est);
                 printf("Pontos: %d \n", cliente.pontos);
                 do {
-                    printf("QUER MESMO EDITAR INFORMAÇÕES DESTE CLIENTE [S/N]? ");
+                    printf("\nQUER MESMO EDITAR INFORMAÇÕES DESTE CLIENTE [S/N]? ");
                     scanf(" %c", &edit);
                     if ((edit == 's') || (edit == 'S')) {
 
                         //ATUALIZAÇÃO DOS DADOS DO CLIENTE
                         system("cls");
                         printf("\n\nATUALIZAÇÃO DOS DADOS DO CLIENTE: %s \n", cliente.nomeClien);
-                        printf("CPF: ");
+                        printf("\nCPF: ");
                         scanf(" %[^\n]s", cliente.cpf);
                         printf("Nome: ");
                         scanf(" %[^\n]s", cliente.nomeClien);
@@ -92,7 +92,7 @@ void atualClien()
                         fwrite(&cliente, sizeof(TCliente), 1, arq);
                         fflush(arq);
                         system("cls");
-                        printf("DADOS DO CLIENTE ATUALIZADO COM SUCESSO! \n");
+                        printf("\n\nDADOS DO CLIENTE ATUALIZADO COM SUCESSO! \n\n");
                         system("pause");
                         fclose(arq);
                         return;
@@ -100,7 +100,7 @@ void atualClien()
                         fclose(arq);
                         return;
                     } else {
-                        printf("COMANDO INVÁLIDO! \n");
+                        printf("\nCOMANDO INVÁLIDO! \n");
                     }
                 } while(1);
             }
@@ -132,6 +132,7 @@ void atualClien()
     {
         system("cls");
         printf ("ERRO NA ABERTURA DO ARQUIVO! \n");
+        printf("\n");
         system("pause");
     }
 }

@@ -39,6 +39,7 @@ int main ()
             default: //OPÇÃO CASO ENTRE COM UM VALOR DESCONHECIDO
                 system ("cls");
                 printf ("\nCOMANDO INVÁLIDO! \n");
+                printf("\n");
                 system ("pause");
                 break;
         }

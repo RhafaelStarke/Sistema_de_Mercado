@@ -41,6 +41,7 @@ void subMenuClientes()
             default:
                 system("cls");
                 printf ("COMANDO INVÁLIDO! \n");
+                printf("\n");
                 system("pause");
                 break;
         }

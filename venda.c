@@ -4,14 +4,13 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
-#include <stdbool.h>
 #include <windows.h>
 #include "registros.h"
 #include "funcoes.h"
 
 void venda(){
 
-    FILE *arqVendas;
+    FILE *arqVendas = fopen("../Vendas.dat", "rb");
     FILE *arqCliente;
     FILE *arqProdutos;
     TVenda venda;
@@ -22,35 +21,50 @@ void venda(){
     struct tm dataSist=*localtime(&t);
     int cod=1, cad, exis, cont;
 
-    if(arqVendas){
+    if (arqVendas != NULL){
         while(fread(&venda, sizeof(TVenda), 1, arqVendas)){
             cod+=1;
         }
+        fclose(arqVendas);
+    } else{
+        system("cls");
+        printf("\n\nERRO NA ABERTURA DO ARQUIVO! \n\n");
+        printf("\n");
+        system("pause");
     }
 
-    arqVendas= fopen("../Vendas.dat", "ab");
-
-    if (arqVendas){
+    arqVendas = fopen("../Vendas.dat", "ab");
+    if (arqVendas != NULL){
         venda.idenVenda=cod;
         venda.qtdProd=0;
-        printf("CPF: ");
+
+        system("cls");
+        printf("\n\nNOVA VENDA: \n");
+        printf("\nCPF: ");
         scanf(" %[^\n]s", venda.cpf);
         cad=1;
+
         arqCliente= fopen("../Clientes.dat", "rb");
-        if (arqCliente){
+        if (arqCliente != NULL){
             while(fread(&cliente, sizeof(TCliente), 1, arqCliente)&&(cad==1)){
                 if (strcmp(venda.cpf, cliente.cpf)==0){
                     cad=0;
                 }
             }
             fclose(arqCliente);
+        }else{
+            system("cls");
+            printf("\n\nERRO NA ABERTURA DO ARQUIVO! \n\n");
+            printf("\n");
+            system("pause");
         }
+
         if (cad==1){
             char simOUnao;
             system("cls");
-            printf("NENHUM CPF ENCONTRADO!");
+            printf("\n\nNENHUM CPF ENCONTRADO!\n");
             do {
-                printf("Deseja cadastrar novo cliente? \n");
+                printf("Deseja cadastrar novo cliente? [S/N] ");
                 scanf(" %c", &simOUnao);
                 if ((simOUnao=='s')||(simOUnao=='S')){
                     cadNovClien();
@@ -67,12 +81,11 @@ void venda(){
         venda.dataCompr.dia=dataSist.tm_mday;
         venda.dataCompr.mes=dataSist.tm_mon+1;
         venda.dataCompr.ano=dataSist.tm_year+1900;
-        system("cls");
         do{
-            printf("Código do produto: ");
+            printf("\n\nCódigo do produto: ");
             scanf(" %d", &itensCompra.codProd);
             arqProdutos = fopen("../Produtos.dat", "rb+");
-            if(arqProdutos){
+            if(arqProdutos != NULL){
                 exis=0;
                 while ((exis==0)&&(fread(&produto, sizeof(TProduto), 1, arqProdutos))){
                     if(itensCompra.codProd==produto.idenProd){
@@ -95,21 +108,38 @@ void venda(){
                             system("cls");
                         }else{
                             system("cls");
-                            printf("Não há quantidade disponível do produto! \n");
+                            printf("\n\nNão há quantidade disponível do produto! \n");
                         }
                     }else{
                         system("cls");
-                        printf("Não há quantidade disponível do produto! \n");
+                        printf("\n\nNão há quantidade disponível do produto! \n");
                     }
                 }else{
                     system("cls");
-                    printf("Código inválido! \n");
+                    printf("\n\nCódigo inválido! \n");
                 }
                 fclose(arqProdutos);
+            }else{
+                system("cls");
+                printf("\n\nERRO NA ABERTURA DO ARQUIVO! \n\n");
+                printf("\n");
+                system("pause");
+                return;
             }
-            printf("Digite 1 para continuar a compra, ou qualquer outro para finalizar: ");
+            printf("\n\nDigite 1 para continuar a compra, ou qualquer outro para finalizar: ");
             scanf(" %d", &cont);
         } while (cont==1);
+
+        system("cls");
+        printf("\n\nIdentificação da venda: %d \n", venda.idenVenda);
+        printf("\nCPF do cliente: %s \n", venda.cpf);
+        printf("\nData da compra: %d/%d/%d \n", venda.dataCompr.dia, venda.dataCompr.mes, venda.dataCompr.ano);
+        printf("\nValor total da compra: R$ %.2f \n", venda.valorTot);
+        printf("\nQuantidade de produtos: %d \n", venda.qtdProd);
+        printf("\nPontos gerados: %d \n\n", (int)venda.valorTot);
+        printf("\n");
+        system("pause");
+
         arqCliente = fopen("../Clientes.dat", "rb+");
         if(arqCliente){
             cliente.pontos+=(int)venda.valorTot;
@@ -122,6 +152,8 @@ void venda(){
         system("cls");
     } else{
         system("cls");
-        printf("ERRO NA ABERTURA DO ARQUIVO! \n");
+        printf("\n\nERRO NA ABERTURA DO ARQUIVO! \n\n");
+        printf("\n");
+        system("pause");
     }
 }

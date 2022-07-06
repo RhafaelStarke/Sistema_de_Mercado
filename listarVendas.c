@@ -28,9 +28,9 @@ void listarVendas(){
                 while (fread(&vendas, sizeof(TVenda), 1, arqVendas)){
                     if (strcmp(cliente.cpf, vendas.cpf)==0){
                         flag=true;
-                        system("cls");
-                        printf("COMPRA ENCONTRADA! \n");
-                        printf("Data da compra: %d/%d/%d; \tValor Total: %.2f; \tQtd Total: %d \n", vendas.dataCompr.dia, vendas.dataCompr.mes, vendas.dataCompr.ano, vendas.valorTot, vendas.qtdProd);
+                        printf("\nIDENTIFICAÇÃO: %d; \tData da compra: %d/%d/%d; \tValor Total: %.2f; \tQtd Total: %d \n\n", vendas.idenVenda,
+                               vendas.dataCompr.dia, vendas.dataCompr.mes, vendas.dataCompr.ano, vendas.valorTot,
+                               vendas.qtdProd);
                     }
                 }
             }
@@ -38,6 +38,7 @@ void listarVendas(){
                 system("cls");
                 printf("NENHUMA COMPRA NESSE CPF FOI ENCONTRADA! \n");
             }
+            printf("\n");
             system("pause");
             fclose(arqVendas);
             fclose(arqCliente);
@@ -45,12 +46,14 @@ void listarVendas(){
         else{
             system("cls");
             printf ("ERRO NA ABERTURA DO ARQUIVO! \n");
+            printf("\n");
             system("pause");
         }
     }
     else{
         system("cls");
         printf ("ERRO NA ABERTURA DO ARQUIVO! \n");
+        printf("\n");
         system("pause");
     }
 }

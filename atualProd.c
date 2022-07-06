@@ -27,7 +27,7 @@ void atualProd()
 
         //USUÁRIO ENTRA COM A IDENTIFICAÇÃO DO PRODUTO QUE SERÁ ATUALIZADO
         system("cls");
-        printf("\n\nEntre com a identificação do produto que quer atualizar as informações: \n");
+        printf("\n\nEntre com a identificação do produto que quer atualizar as informações: ");
         scanf(" %d", &iden);
         do {
             fseek(arq, sizeof(TProduto)*flag, SEEK_SET);
@@ -37,7 +37,7 @@ void atualProd()
                 //MOSTRA O PRODUTO QUE TERÁ SEUS DADOS ATUALIZADOS
                 flagIden = true;
                 system("cls");
-                printf("PRODUTO COM IDENTIFICAÇÃO CORRESPONDENTE: \n");
+                printf("\n\nPRODUTO COM IDENTIFICAÇÃO CORRESPONDENTE: \n\n");
                 printf("Identificação: %d \n", novoProduto.idenProd);
                 printf("Setor: %s \n", novoProduto.setor);
                 printf("Nome: %s \n", novoProduto.nome);
@@ -46,20 +46,20 @@ void atualProd()
                        novoProduto.dataVal.ano);
                 printf("Quantidade no estoque: %d \n", novoProduto.qtdEstoq);
                 do {
-                    printf("Quer Mesmo Editar Este Produto [S/N]? ");
+                    printf("\n\nQuer Mesmo Editar Este Produto [S/N]? ");
                     scanf(" %c", &edit);
 
                     //ATUALIZAÇÃO DOS DADOS DO PRODUTO
                     if ((edit == 'S') || (edit == 's')) {
                         system("cls");
-                        printf("Setores de produtos: \n");
+                        printf("\n\nSetores de produtos: \n\n");
                         printf("1. Higiene e Limpeza \n");
                         printf("2. Bebidas \n");
                         printf("3. Frios \n");
                         printf("4. Padaria \n");
                         printf("5. Açougue \n");
                         do{
-                            printf("Novo setor: ");
+                            printf("\n\nNovo setor: ");
                             scanf(" %d", &set);
                             switch (set) {
                                 case 1:
@@ -82,7 +82,8 @@ void atualProd()
                                     break;
                             }
                         } while ((set<1)||(set>5));
-                        printf("Novo nome: ");
+                        system("cls");
+                        printf("\n\nNovo nome: ");
                         scanf(" %[^\n]s", novoProduto.nome);
                         printf("Novo preço: ");
                         scanf(" %lf", &novoProduto.preco);
@@ -97,13 +98,13 @@ void atualProd()
                         fwrite(&novoProduto, sizeof(TProduto), 1, arq);
                         fflush(arq);
                         system("cls");
-                        printf("\n\nInformações do Produto Modificadas com Sucesso! \n");
+                        printf("\n\nInformações do Produto Modificadas com Sucesso! \n\n");
                         system("pause");
                         return;
                     } else if ((edit == 'n') || (edit == 'N')) {
                         return;
                     } else {
-                        printf("COMANDO INVÁLIDO! \n");
+                        printf("\nCOMANDO INVÁLIDO!");
                     }
                 } while (1);
             }
@@ -112,7 +113,7 @@ void atualProd()
         if (flagIden==false){
             char cad;
             system("cls");
-            printf("\n\nNENHUM PRODUTO FOI ENCONTRADO COM ESSA IDENTIFICAÇÃO! \n");
+            printf("\n\nNENHUM PRODUTO FOI ENCONTRADO COM ESSA IDENTIFICAÇÃO! \n\n");
             do {
                 printf("Deseja cadastrar um novo produto [S/N]? ");
                 scanf(" %c", &cad);

@@ -14,7 +14,7 @@ void listar1000(){
     bool flag=false;
 
     system("cls");
-    printf("LISTA DE CLIENTES COM PONTOS ACIMA DE 1000: \n\n");
+    printf("\n\nLISTA DE CLIENTES COM PONTOS ACIMA DE 1000: \n\n");
     arq = fopen("../Clientes.dat", "rb");
     if(arq!=NULL){
         while (fread(&listCliente, sizeof(TCliente), 1, arq)){
@@ -22,21 +22,22 @@ void listar1000(){
 
                 //LISTAGEM DE CLIENTES COM MAIS DE 1000 PONTOS
                 flag=true;
-                printf("CPF: %s; Nome: %s; Nascimento: %d/%d/%d; Idade: %d; End: %s; Cidade: %s; Estado: %s; Pontos: %d \n",
+                printf("CPF: %s; Nome: %s; Nascimento: %d/%d/%d; Idade: %d; End: %s; Cidade: %s; Estado: %s; Pontos: %d \n\n",
                        listCliente.cpf, listCliente.nomeClien, listCliente.nasc.dia, listCliente.nasc.mes,
                        listCliente.nasc.ano, listCliente.idade, listCliente.end, listCliente.cid, listCliente.est,
                        listCliente.pontos);
             }
         }
         if (flag==false){
-            printf("Nenhum cliente com pontuação maior que 1000! \n\n");
+            printf("\n\nNenhum cliente com pontuação maior que 1000! \n\n");
         }
+        printf("\n");
         system("pause");
         fclose(arq);
     }
     else{
         system("cls");
-        printf ("ERRO NA ABERTURA DO ARQUIVO! \n");
+        printf ("\n\nERRO NA ABERTURA DO ARQUIVO! \n\n");
         system("pause");
     }
 }

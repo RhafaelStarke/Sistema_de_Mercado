@@ -14,7 +14,7 @@ void listar18a25(){
     bool flag=false;
 
     system("cls");
-    printf("LISTA DE CLIENTES COM IDADE ENTRE 18 A 25 ANOS: \n\n");
+    printf("\n\nLISTA DE CLIENTES COM IDADE ENTRE 18 A 25 ANOS: \n\n");
     arq = fopen("../Clientes.dat", "rb");
     if(arq!=NULL){
         while (fread(&listCliente, sizeof(TCliente), 1, arq)){
@@ -22,21 +22,22 @@ void listar18a25(){
 
                 //LISTAGEM DE CLIENTES COM A IDADE ENTRE 18 E 25
                 flag=true;
-                printf("CPF: %s; Nome: %s; Nascimento: %d/%d/%d; Idade: %d; End: %s; Cidade: %s; Estado: %s; Pontos: %d \n",
+                printf("CPF: %s; Nome: %s; Nascimento: %d/%d/%d; Idade: %d; End: %s; Cidade: %s; Estado: %s; Pontos: %d \n\n",
                        listCliente.cpf, listCliente.nomeClien, listCliente.nasc.dia, listCliente.nasc.mes,
                        listCliente.nasc.ano, listCliente.idade, listCliente.end, listCliente.cid, listCliente.est,
                        listCliente.pontos);
             }
         }
         if (flag==false){
-            printf("Nenhum cliente com idade entre 18 a 25 anos! \n\n");
+            printf("\n\nNenhum cliente com idade entre 18 a 25 anos! \n\n");
         }
+        printf("\n");
         system("pause");
         fclose(arq);
     }
     else{
         system("cls");
-        printf ("ERRO NA ABERTURA DO ARQUIVO! \n");
+        printf ("\n\nERRO NA ABERTURA DO ARQUIVO! \n\n");
         system("pause");
     }
 }

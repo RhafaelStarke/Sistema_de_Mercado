@@ -87,6 +87,7 @@ void cadNovClien()
     {
         system("cls");
         printf("ERRO NA ABERTURA DO ARQUIVO! \n");
+        printf("\n");
         system("pause");
     }
 }
