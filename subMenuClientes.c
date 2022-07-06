@@ -9,15 +9,15 @@ void subMenuClientes()
     do
     {
         system("cls");
-        printf ("\n\n*************MENU CLIENTES*************\n");
-        printf ("1. Cadastrar Novo Cliente \n");
-        printf ("2. Atualizar Pontuação \n");
-        printf ("3. Atualizar Cliente \n");
-        printf ("4. Listar Clientes Entre 18 a 25 \n");
-        printf ("5. Listar Clientes acima de 1000 pontos \n");
-        printf ("9. Sair \n");
-        printf ("***************************************\n");
-        printf ("\nSelecione o número correspondente: ");
+        printf ("\n\n\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t\t\t\t\t\t*************MENU CLIENTES*************\n");
+        printf ("\n\t\t\t\t\t\t\t\t\t1. Cadastrar Novo Cliente \n");
+        printf ("\t\t\t\t\t\t\t\t\t2. Atualizar Pontuação \n");
+        printf ("\t\t\t\t\t\t\t\t\t3. Atualizar Cliente \n");
+        printf ("\t\t\t\t\t\t\t\t\t4. Listar Clientes Entre 18 a 25 \n");
+        printf ("\t\t\t\t\t\t\t\t\t5. Listar Clientes acima de 1000 pontos \n");
+        printf ("\t\t\t\t\t\t\t\t\t9. Sair \n");
+        printf ("\n\t\t\t\t\t\t\t\t\t***************************************\n");
+        printf ("\n\t\t\t\t\t\t\t\t\tSelecione o número correspondente: ");
         scanf (" %d", &subMenu2);
         switch (subMenu2)
         {

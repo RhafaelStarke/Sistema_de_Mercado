@@ -13,13 +13,13 @@ int main ()
     {
         //MENU PRINCIPAL DO PROGRAMA
         system ("cls");
-        printf ("\n\n*****MENU*****\n");
-        printf ("1. Vendas \n");
-        printf ("2. Clientes \n");
-        printf ("3. Produtos \n");
-        printf ("9. Sair \n");
-        printf ("**************\n");
-        printf ("\nSelecione o número correspondente: ");
+        printf ("\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t\t\t\t\t\t\t*****MENU*****\n");
+        printf ("\n\t\t\t\t\t\t\t\t\t\t1. Vendas \n");
+        printf ("\t\t\t\t\t\t\t\t\t\t2. Clientes \n");
+        printf ("\t\t\t\t\t\t\t\t\t\t3. Produtos \n");
+        printf ("\t\t\t\t\t\t\t\t\t\t9. Sair \n");
+        printf ("\n\t\t\t\t\t\t\t\t\t\t**************\n");
+        printf ("\n\n\t\t\t\t\t\t\t\t\tSelecione o número correspondente: ");
         scanf (" %d", &menu);
 
         switch (menu)

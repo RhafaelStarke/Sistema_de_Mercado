@@ -19,11 +19,6 @@ add_executable(Mercado_do_Bairro
         listar18a25.c
         listar1000.c
         listarSet.c
-        funcoesListaSet.h
-        listarHigiene.c
-        listarBebs.c
-        listarFrios.c
-        listarPad.c
-        listarAco.c
         estoqBaixo.c
-        venda.c listarVendas.c)
+        venda.c
+        listarVendas.c)

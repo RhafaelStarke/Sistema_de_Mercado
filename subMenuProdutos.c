@@ -12,14 +12,14 @@ void subMenuProdutos()
     {
         //Escolha de submenu de produtos.
         system("cls");
-        printf ("\n\n**********MENU DE PRODUTOS*********\n");
-        printf ("1. Cadastrar Novo Produto\n");
-        printf ("2. Atualizar Informações de Produto\n");
-        printf ("3. Estoque Por Setor\n");
-        printf ("4. Produtos Com Estoque Baixo\n");
-        printf ("9. Sair\n");
-        printf ("***********************************\n");
-        printf ("\nSelecione o número correspondente: ");
+        printf ("\n\n\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t\t\t\t\t\t**********MENU DE PRODUTOS*********\n");
+        printf ("\n\t\t\t\t\t\t\t\t\t1. Cadastrar Novo Produto\n");
+        printf ("\t\t\t\t\t\t\t\t\t2. Atualizar Informações de Produto\n");
+        printf ("\t\t\t\t\t\t\t\t\t3. Estoque Por Setor\n");
+        printf ("\t\t\t\t\t\t\t\t\t4. Produtos Com Estoque Baixo\n");
+        printf ("\t\t\t\t\t\t\t\t\t9. Sair\n");
+        printf ("\n\t\t\t\t\t\t\t\t\t***********************************\n");
+        printf ("\n\t\t\t\t\t\t\t\t\tSelecione o número correspondente: ");
         scanf (" %d", &subMenu3);
         switch (subMenu3)
         {
