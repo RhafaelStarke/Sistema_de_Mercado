@@ -1,5 +1,5 @@
 # Projeto de um Sistema de Mercado em C
-01. Sistema para mercado com funcionabilidades como:
+01. Sistema para mercado com funcionalidades como:
 02. Incluir novos produtos ou alterar informações e salvá-los;
 04. Cadastrar ou atualizar dados dos clientes e salavá-los;
 05. Realizar uma nova venda de produtos. Para começar uma venda o cliente informa:
