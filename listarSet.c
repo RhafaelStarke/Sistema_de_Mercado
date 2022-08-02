@@ -15,6 +15,7 @@ void listarSet(){
     printf("\n\nLISTA DE ESTOQUE POR SETOR: \n\n\n");
     arq = fopen("../Produtos.dat", "rb");
     if (arq != NULL){
+        printf("----------------------------------------------------------------------------------------------------------------------------------------------------------\n\n");
         while (fread(&produtos, sizeof(TProduto), 1, arq)){
             if(strcmp("Higiene e limpeza", produtos.setor)==0) {
 
@@ -68,7 +69,7 @@ void listarSet(){
                        produtos.dataVal.ano, produtos.qtdEstoq);
             }
         }
-        printf("\n\n");
+        printf("----------------------------------------------------------------------------------------------------------------------------------------------------------\n");
         system("pause");
         fclose(arq);
     }else{

@@ -6,6 +6,7 @@
 #include <windows.h>
 #include "funcoes.h"
 #include "registros.h"
+#include <time.h>
 
 void cadNovProd()
 {
@@ -14,6 +15,9 @@ void cadNovProd()
     int cod=1;
     FILE *arq;
     TProduto produtos, prodLidos;
+    time_t dataSist;
+    dataSist = time(NULL);
+    struct tm tm = *localtime(&dataSist);
 
     arq = fopen ("../Produtos.dat", "ab+");
     if (arq != NULL)
@@ -54,24 +58,45 @@ void cadNovProd()
                         strcpy(produtos.setor, "Acougue");
                         break;
                     default:
-                        printf("COMANDO INVÁLIDO! \n");
+                        printf("\nCOMANDO INVÁLIDO! \n");
                         break;
                 }
             } while ((set<1)||(set>5));
             system("cls");
             printf("\n\nNome: ");
             scanf(" %[^\n]s", produtos.nome);
-            printf("Preço: ");
-            scanf(" %lf", &produtos.preco);
-            printf("Data de validade (dd/mm/aaaa): ");
-            scanf(" %d/%d/%d", &produtos.dataVal.dia, &produtos.dataVal.mes, &produtos.dataVal.ano);
+            do {
+                printf("Preço: ");
+                scanf(" %lf", &produtos.preco);
+                if(produtos.preco < 0){
+                    printf("\nPREÇO INVÁLIDO!\n\n");
+                }
+            }while(produtos.preco < 0);
+            do
+            {
+                printf("Data de vencimento (dd/mm/aaaa): ");
+                scanf(" %d/%d/%d", &produtos.dataVal.dia, &produtos.dataVal.mes, &produtos.dataVal.ano);
+                if ((produtos.dataVal.dia < 0)||(produtos.dataVal.dia > 31))
+                {
+                    printf("\nDIA INVÁLIDO!\n\n");
+                }
+                else if ((produtos.dataVal.mes < 0)||(produtos.dataVal.mes > 12))
+                {
+                    printf("\nMÊS INVÁLIDO!\n\n");
+                }
+                else if ((produtos.dataVal.ano < 0)||(produtos.dataVal.ano < (tm.tm_year+1900)))
+                {
+                    printf("\nANO INVÁLIDO!\n\n");
+                }
+            }while((produtos.dataVal.dia < 0)||(produtos.dataVal.dia > 31)||(produtos.dataVal.mes < 0)||(produtos.dataVal.mes > 12)
+                ||(produtos.dataVal.ano < 0)||(produtos.dataVal.ano < (tm.tm_year+1900)));
             do
             {
                 printf("Quantidade no estoque: ");
                 scanf(" %d", &produtos.qtdEstoq);
                 if(produtos.qtdEstoq < 0)
                 {
-                    printf("\nDIGITE UMA QUANTIDADE POSITIVA! \n\n");
+                    printf("\nESTOQUE INVÁLIDO!\n\n");
                 }
             }while(produtos.qtdEstoq < 0);
 
@@ -81,8 +106,13 @@ void cadNovProd()
 
             system("cls");
             printf("\n\nPRODUTO CADASTRADO COM SUCESSO! \n\n");
-            printf("Quer cadastrar outro produto? [S/N] ");
-            scanf(" %c", &cad);
+            do {
+                printf("Quer cadastrar outro produto? [S]im / [N]ão ");
+                scanf(" %c", &cad);
+                if((cad != 's')&&(cad != 'S')&&(cad != 'n')&&(cad != 'N')){
+                    printf("\nCOMANDO INVÁLIDO!\n\n");
+                }
+            }while((cad != 's')&&(cad != 'S')&&(cad != 'n')&&(cad != 'N'));
             cod+=1;
         } while((cad == 's')||(cad == 'S'));
         fclose (arq);

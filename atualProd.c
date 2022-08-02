@@ -5,13 +5,16 @@
 #include <stdlib.h>
 #include <windows.h>
 #include <stdbool.h>
-#include "subMenu.h"
 #include "registros.h"
 #include "funcoes.h"
+#include <time.h>
 
 void atualProd()
 {
     FILE *arq;
+    time_t dataSist;
+    dataSist = time(NULL);
+    struct tm tm = *localtime(&dataSist);
 
     system("cls");
     printf ("\n\nATUALIZAÇÃO DE DADOS DOS PRODUTOS: \n");
@@ -27,6 +30,14 @@ void atualProd()
 
         //USUÁRIO ENTRA COM A IDENTIFICAÇÃO DO PRODUTO QUE SERÁ ATUALIZADO
         system("cls");
+        printf("\n-----------------------------------------------------------------------------------------------------------------------------------------------------------------\n\n");
+        while (fread(&produto, sizeof(TProduto), 1, arq)){
+            printf("Identificação: %d; \tSetor: %s; \tNome: %s; \tPreço: R$ %.2lf; \tVencimento: %d/%d/%d; \tEstoque: %d; \n\n",
+                   produto.idenProd, produto.setor, produto.nome, produto.preco, produto.dataVal.dia, produto.dataVal.mes,
+                   produto.dataVal.ano, produto.qtdEstoq);
+        }
+        printf("\n-----------------------------------------------------------------------------------------------------------------------------------------------------------------\n");
+
         printf("\n\nEntre com a identificação do produto que quer atualizar as informações: ");
         scanf(" %d", &iden);
         do {
@@ -46,7 +57,7 @@ void atualProd()
                        novoProduto.dataVal.ano);
                 printf("Quantidade no estoque: %d \n", novoProduto.qtdEstoq);
                 do {
-                    printf("\n\nQuer Mesmo Editar Este Produto [S/N]? ");
+                    printf("\n\nQuer Mesmo Editar Este Produto? [S]im / [N]ão ");
                     scanf(" %c", &edit);
 
                     //ATUALIZAÇÃO DOS DADOS DO PRODUTO
@@ -59,7 +70,7 @@ void atualProd()
                         printf("4. Padaria \n");
                         printf("5. Açougue \n");
                         do{
-                            printf("\n\nNovo setor: ");
+                            printf("\n\nNovo setor do produto: ");
                             scanf(" %d", &set);
                             switch (set) {
                                 case 1:
@@ -78,20 +89,44 @@ void atualProd()
                                     strcpy(novoProduto.setor, "Acougue");
                                     break;
                                 default:
-                                    printf("COMANDO INVÁLIDO! \n");
+                                    printf("\nCOMANDO INVÁLIDO!");
                                     break;
                             }
                         } while ((set<1)||(set>5));
                         system("cls");
                         printf("\n\nNovo nome: ");
                         scanf(" %[^\n]s", novoProduto.nome);
-                        printf("Novo preço: ");
-                        scanf(" %lf", &novoProduto.preco);
-                        printf("Nova data de válidade (dd/mm/aaaa): ");
-                        scanf(" %d/%d/%d", &novoProduto.dataVal.dia, &novoProduto.dataVal.mes,
-                              &novoProduto.dataVal.ano);
-                        printf("Nova quantidade no estoque: ");
-                        scanf(" %d", &novoProduto.qtdEstoq);
+                        do {
+                            printf("Novo preço: ");
+                            scanf(" %lf", &novoProduto.preco);
+                            if(novoProduto.preco < 0){
+                                printf("\nPREÇO INVÁLIDO!\n\n");
+                            }
+                        } while (novoProduto.preco < 0);
+                        do{
+                            printf("Nova data de validade: (dd/mm/aaaa) ");
+                            scanf(" %d/%d/%d", &novoProduto.dataVal.dia, &novoProduto.dataVal.mes, &novoProduto.dataVal.ano);
+                            if ((novoProduto.dataVal.dia < 0)||(novoProduto.dataVal.dia > 31))
+                            {
+                                printf("\nDIA INVÁLIDO!\n\n");
+                            }
+                            else if ((novoProduto.dataVal.mes < 0)||(novoProduto.dataVal.mes > 12))
+                            {
+                                printf("\nMÊS INVÁLIDO!\n\n");
+                            }
+                            else if ((novoProduto.dataVal.ano < 0)||(novoProduto.dataVal.ano < (tm.tm_year+1900)))
+                            {
+                                printf("\nANO INVÁLIDO!\n\n");
+                            }
+                        }while((novoProduto.dataVal.dia < 0)||(novoProduto.dataVal.dia > 31)||(novoProduto.dataVal.mes < 0)||(novoProduto.dataVal.mes > 12)
+                               ||(novoProduto.dataVal.ano < 0)||(novoProduto.dataVal.ano < (tm.tm_year+1900)));
+                        do {
+                            printf("Nova quantidade no estoque: ");
+                            scanf(" %d", &novoProduto.qtdEstoq);
+                            if(novoProduto.qtdEstoq < 0){
+                                printf("\nESTOQUE INVÁLIDO\n\n");
+                            }
+                        }while(novoProduto.qtdEstoq < 0);
 
                         //GRAVANDO AS INFORMAÇÕES ATUALIZADOS NO ARQUIVO
                         fseek(arq, sizeof(TProduto) * (iden - 1), SEEK_SET);
@@ -115,7 +150,7 @@ void atualProd()
             system("cls");
             printf("\n\nNENHUM PRODUTO FOI ENCONTRADO COM ESSA IDENTIFICAÇÃO! \n\n");
             do {
-                printf("Deseja cadastrar um novo produto [S/N]? ");
+                printf("Deseja cadastrar um novo produto? [S]im / [N]ão  ");
                 scanf(" %c", &cad);
                 if ((cad == 's') || (cad == 'S')) {
                     cadNovProd();
@@ -123,7 +158,7 @@ void atualProd()
                 } else if ((cad == 'n') || (cad == 'N')) {
                     return;
                 } else {
-                    printf("Comando inválido! \n");
+                    printf("\nComando inválido!\n\n");
                 }
             } while (1);
         }

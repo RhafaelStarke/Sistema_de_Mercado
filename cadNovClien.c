@@ -42,17 +42,18 @@ void cadNovClien()
                 scanf(" %d/%d/%d", &cliente.nasc.dia, &cliente.nasc.mes, &cliente.nasc.ano);
                 if ((cliente.nasc.dia < 0)||(cliente.nasc.dia > 31))
                 {
-                    printf("DIGITE UM DIA VÁLIDO! \n");
+                    printf("DIA INVÁLIDO! \n");
                 }
                 else if ((cliente.nasc.mes < 0)||(cliente.nasc.mes > 12))
                 {
-                    printf("DIGITE UM MÊS VÁLIDO! \n");
+                    printf("MÊS INVÁLIDO! \n");
                 }
                 else if ((cliente.nasc.ano < 0))
                 {
-                    printf("DIGITE UM ANO VÁLIDO! \n");
+                    printf("ANO INVÁLIDO! \n");
                 }
-            }while((cliente.nasc.dia < 0)||(cliente.nasc.dia > 31)||(cliente.nasc.mes < 0)||(cliente.nasc.mes > 12)||(cliente.nasc.ano < 0));
+            }while((cliente.nasc.dia < 0)||(cliente.nasc.dia > 31)||(cliente.nasc.mes < 0)||(cliente.nasc.mes > 12)||
+                (cliente.nasc.ano < 0));
 
             if ((cliente.nasc.dia <= tm.tm_mday)||(cliente.nasc.mes <= (tm.tm_mon+1)))
             {
@@ -76,9 +77,14 @@ void cadNovClien()
             fflush(arq);
 
             system("cls");
-            printf("CLIENTE CADASTRADO COM SUCESSO! \n");
-            printf("Quer cadastrar outro cliente? [S/N] ");
-            scanf(" %c", &cad);
+            printf("\nCLIENTE CADASTRADO COM SUCESSO! \n");
+            do {
+                printf("Quer cadastrar outro cliente? [S]im / [N]ão ");
+                scanf(" %c", &cad);
+                if((cad != 's')&&(cad != 'S')&&(cad != 'n')&&(cad != 'N')){
+                    printf("\nCOMANDO INVÁLIDO\n\n");
+                }
+            }while((cad != 's')&&(cad != 'S')&&(cad != 'n')&&(cad != 'N'));
             cod+=1;
         }while((cad == 's')||(cad == 'S'));
         fclose(arq);

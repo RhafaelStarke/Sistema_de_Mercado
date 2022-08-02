@@ -13,17 +13,20 @@ void estoqBaixo(){
     bool flag=false;
 
     system("cls");
-    printf("LISTA DE ESTOQUE BAIXO: \n\n");
+    printf("\nLISTA DE ESTOQUE BAIXO: \n\n");
     arq = fopen("../Produtos.dat", "rb");
     if(arq!=NULL){
+        printf("----------------------------------------------------------------------------------------------------------------------------------------------------------------\n");
         while (fread(&produtos, sizeof(TProduto), 1, arq)){
             if(produtos.qtdEstoq<5) {
 
                 //LISTAGEM DE PRODUTOS COM ESTOQUE BAIXO
                 flag=true;
-                printf("Identificação: %d; \tSetor: %s; \tNome: %s; \tPreço: R$ %.2lf; \tVencimento: %d/%d/%d; \tEstoque: %d; \n", produtos.idenProd, produtos.setor, produtos.nome, produtos.preco, produtos.dataVal.dia, produtos.dataVal.mes, produtos.dataVal.ano, produtos.qtdEstoq);
+                printf("Identificação: %d; \tSetor: %s; \tNome: %s; \tPreço: R$ %.2lf; \tVencimento: %d/%d/%d; \tEstoque: %d; \n\n",
+                       produtos.idenProd, produtos.setor, produtos.nome, produtos.preco, produtos.dataVal.dia, produtos.dataVal.mes, produtos.dataVal.ano, produtos.qtdEstoq);
             }
         }
+        printf("----------------------------------------------------------------------------------------------------------------------------------------------------------------\n");
         if(flag==false){
             printf("Nenhum produto com estoque baixo! \n\n");
         }
