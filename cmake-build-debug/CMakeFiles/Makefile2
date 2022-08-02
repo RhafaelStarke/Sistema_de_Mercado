@@ -53,10 +53,10 @@ RM = "C:\Program Files\JetBrains\CLion 2022.2\bin\cmake\win\bin\cmake.exe" -E rm
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\rh4f4\OneDrive\Documentos\Mercado_do_Bairro\Sistema_de_Mercado
+CMAKE_SOURCE_DIR = C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\rh4f4\OneDrive\Documentos\Mercado_do_Bairro\Sistema_de_Mercado\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -80,14 +80,14 @@ clean: CMakeFiles/Mercado_do_Bairro.dir/clean
 CMakeFiles/Mercado_do_Bairro.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\rh4f4\OneDrive\Documentos\Mercado_do_Bairro\Sistema_de_Mercado\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16 "Built target Mercado_do_Bairro"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16 "Built target Mercado_do_Bairro"
 .PHONY : CMakeFiles/Mercado_do_Bairro.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Mercado_do_Bairro.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rh4f4\OneDrive\Documentos\Mercado_do_Bairro\Sistema_de_Mercado\cmake-build-debug\CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\cmake-build-debug\CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Mercado_do_Bairro.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rh4f4\OneDrive\Documentos\Mercado_do_Bairro\Sistema_de_Mercado\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/Mercado_do_Bairro.dir/rule
 
 # Convenience name for target.

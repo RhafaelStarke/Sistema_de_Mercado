@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug"
+			"value" : "c:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -539,7 +539,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado"
+			"value" : "C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1159,7 +1159,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug"
+			"value" : "C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug"
 		},
 		{
 			"name" : "Mercado_do_Bairro_IS_TOP_LEVEL",
@@ -1183,7 +1183,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado"
+			"value" : "C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado"
 		}
 	],
 	"kind" : "cache",

@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2022.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S C:\Users\rh4f4\OneDrive\Documentos\Mercado_do_Bairro\Sistema_de_Mercado -B C:\Users\rh4f4\OneDrive\Documentos\Mercado_do_Bairro\Sistema_de_Mercado\cmake-build-debug
+"C:\Program Files\JetBrains\CLion 2022.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado -B C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\cmake-build-debug
 -- The C compiler identification is GNU 11.2.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
@@ -7,4 +7,4 @@
 -- Detecting C compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug
+-- Build files have been written to: C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug

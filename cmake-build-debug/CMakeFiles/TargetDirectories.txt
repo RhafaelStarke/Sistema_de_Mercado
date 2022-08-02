@@ -1,3 +1,3 @@
-C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug/CMakeFiles/Mercado_do_Bairro.dir
-C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug/CMakeFiles/Mercado_do_Bairro.dir
+C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug/CMakeFiles/rebuild_cache.dir
