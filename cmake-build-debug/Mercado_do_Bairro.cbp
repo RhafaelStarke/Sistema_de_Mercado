@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug"/>
+				<Option working_dir="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Mercado_do_Bairro">
-				<Option output="C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug/Mercado_do_Bairro.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug"/>
+				<Option output="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug/Mercado_do_Bairro.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -31,15 +31,15 @@
 					<Add directory="/mingw/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 Mercado_do_Bairro"/>
-					<CompileFile command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 Mercado_do_Bairro"/>
+					<CompileFile command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Mercado_do_Bairro/fast">
-				<Option output="C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug/Mercado_do_Bairro.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug"/>
+				<Option output="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug/Mercado_do_Bairro.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -51,88 +51,88 @@
 					<Add directory="/mingw/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 Mercado_do_Bairro/fast"/>
-					<CompileFile command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 Mercado_do_Bairro/fast"/>
+					<CompileFile command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug"/>
+				<Option working_dir="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug"/>
+				<Option working_dir="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JetBrains/CLion 2022.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/atuaPontos.c">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/atuaPontos.c">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/atualClien.c">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/atualClien.c">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/atualProd.c">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/atualProd.c">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cadNovClien.c">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cadNovClien.c">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/cadNovProd.c">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cadNovProd.c">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/estoqBaixo.c">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/estoqBaixo.c">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/funcoes.h">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/funcoes.h">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/listar1000.c">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/listar1000.c">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/listar18a25.c">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/listar18a25.c">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/listarSet.c">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/listarSet.c">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/listarVendas.c">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/listarVendas.c">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/programaPrincipal.c">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/programaPrincipal.c">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/registros.h">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/registros.h">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/subMenu.h">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/subMenu.h">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/subMenuClientes.c">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/subMenuClientes.c">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/subMenuProdutos.c">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/subMenuProdutos.c">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/subMenuVendas.c">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/subMenuVendas.c">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/venda.c">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/venda.c">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Mercado_do_Bairro/Sistema_de_Mercado/CMakeLists.txt">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
