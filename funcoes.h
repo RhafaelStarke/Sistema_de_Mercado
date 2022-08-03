@@ -6,7 +6,6 @@
 #define MERCADO_DO_BAIRRO_FUNCOES_H
 //FUNÇÕES PARA SUBMENU CLIENTES
 void cadNovClien();
-void atuaPontos();
 void atualClien();
 void listar18a25();
 void listar1000();

@@ -76,7 +76,7 @@ void cadNovProd()
             {
                 printf("Data de vencimento (dd/mm/aaaa): ");
                 scanf(" %d/%d/%d", &produtos.dataVal.dia, &produtos.dataVal.mes, &produtos.dataVal.ano);
-                if ((produtos.dataVal.dia < 0)||(produtos.dataVal.dia > 31))
+                if ((produtos.dataVal.dia <= 0)||(produtos.dataVal.dia > 31))
                 {
                     printf("\nDIA INVÁLIDO!\n\n");
                 }
@@ -88,8 +88,8 @@ void cadNovProd()
                 {
                     printf("\nANO INVÁLIDO!\n\n");
                 }
-            }while((produtos.dataVal.dia < 0)||(produtos.dataVal.dia > 31)||(produtos.dataVal.mes < 0)||(produtos.dataVal.mes > 12)
-                ||(produtos.dataVal.ano < 0)||(produtos.dataVal.ano < (tm.tm_year+1900)));
+            }while((produtos.dataVal.dia <= 0)||(produtos.dataVal.dia > 31)||(produtos.dataVal.mes <= 0)||(produtos.dataVal.mes > 12)
+                ||(produtos.dataVal.ano <= 0)||(produtos.dataVal.ano < (tm.tm_year+1900)));
             do
             {
                 printf("Quantidade no estoque: ");
@@ -105,9 +105,9 @@ void cadNovProd()
             fflush (arq);
 
             system("cls");
-            printf("\n\nPRODUTO CADASTRADO COM SUCESSO! \n\n");
+            printf("\nPRODUTO CADASTRADO COM SUCESSO! \n\n");
             do {
-                printf("Quer cadastrar outro produto? [S]im / [N]ão ");
+                printf("Quer cadastrar outro produto? [S]im / [N]ão\n");
                 scanf(" %c", &cad);
                 if((cad != 's')&&(cad != 'S')&&(cad != 'n')&&(cad != 'N')){
                     printf("\nCOMANDO INVÁLIDO!\n\n");

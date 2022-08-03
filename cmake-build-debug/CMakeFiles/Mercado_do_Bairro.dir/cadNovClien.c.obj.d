@@ -256,4 +256,5 @@ CMakeFiles/Mercado_do_Bairro.dir/cadNovClien.c.obj: \
  C:/PROGRA~1/JetBrains/CLion\ 2022.2/bin/mingw/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
  C:/PROGRA~1/JetBrains/CLion\ 2022.2/bin/mingw/x86_64-w64-mingw32/include/pthread_time.h \
  C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\registros.h \
- C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\funcoes.h
+ C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\funcoes.h \
+ C:/PROGRA~1/JetBrains/CLion\ 2022.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdbool.h

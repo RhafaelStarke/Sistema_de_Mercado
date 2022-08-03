@@ -7,6 +7,7 @@
 #include <time.h>
 #include "registros.h"
 #include "funcoes.h"
+#include <stdbool.h>
 
 void cadNovClien()
 {
@@ -15,12 +16,13 @@ void cadNovClien()
     arq = fopen ("../Clientes.dat", "ab+");
     if (arq != NULL)
     {
-        TCliente cliente;
+        TCliente cliente, comp;
         char cad;
         int cod;
         time_t dataSist;
         dataSist = time(NULL);
         struct tm tm = *localtime(&dataSist);
+        int flag = 0;
 
         while (fread(&cliente, sizeof(TCliente), 1, arq)){
             cod+=1;
@@ -32,8 +34,21 @@ void cadNovClien()
             system("cls");
             printf("\n\nCADASTRO DE NOVO CLIENTE: \n");
             cliente.cod=cod;
-            printf("CPF: ");
+            printf("\nCPF: ");
             scanf(" %[^\n]s", cliente.cpf);
+
+            //VERIFICA SE O CLIENTE JÁ ESTÁ CADASTRADO
+            do{
+                fseek(arq, sizeof(TCliente)*flag, SEEK_SET);
+                fread(&comp, sizeof(TCliente), 1, arq);
+                if(strcmp(cliente.cpf, comp.cpf) == 0){
+                    printf("\nCLIENTE JÁ CADASTRADO!\n\n");
+                    system("pause");
+                    return;
+                }
+                flag+=1;
+            }while(feof(arq)==false);
+
             printf("Nome completo: ");
             scanf(" %[^\n]s", cliente.nomeClien);
             do
@@ -42,15 +57,15 @@ void cadNovClien()
                 scanf(" %d/%d/%d", &cliente.nasc.dia, &cliente.nasc.mes, &cliente.nasc.ano);
                 if ((cliente.nasc.dia < 0)||(cliente.nasc.dia > 31))
                 {
-                    printf("DIA INVÁLIDO! \n");
+                    printf("\nDIA INVÁLIDO!\n\n");
                 }
                 else if ((cliente.nasc.mes < 0)||(cliente.nasc.mes > 12))
                 {
-                    printf("MÊS INVÁLIDO! \n");
+                    printf("\nMÊS INVÁLIDO!\n\n");
                 }
                 else if ((cliente.nasc.ano < 0))
                 {
-                    printf("ANO INVÁLIDO! \n");
+                    printf("\nANO INVÁLIDO!\n\n");
                 }
             }while((cliente.nasc.dia < 0)||(cliente.nasc.dia > 31)||(cliente.nasc.mes < 0)||(cliente.nasc.mes > 12)||
                 (cliente.nasc.ano < 0));
@@ -77,9 +92,9 @@ void cadNovClien()
             fflush(arq);
 
             system("cls");
-            printf("\nCLIENTE CADASTRADO COM SUCESSO! \n");
+            printf("\nCLIENTE CADASTRADO COM SUCESSO!\n\n");
             do {
-                printf("Quer cadastrar outro cliente? [S]im / [N]ão ");
+                printf("Quer cadastrar outro cliente? [S]im / [N]ão\n");
                 scanf(" %c", &cad);
                 if((cad != 's')&&(cad != 'S')&&(cad != 'n')&&(cad != 'N')){
                     printf("\nCOMANDO INVÁLIDO\n\n");
@@ -92,8 +107,7 @@ void cadNovClien()
     else
     {
         system("cls");
-        printf("ERRO NA ABERTURA DO ARQUIVO! \n");
-        printf("\n");
+        printf("\nERRO NA ABERTURA DO ARQUIVO!\n\n");
         system("pause");
     }
 }

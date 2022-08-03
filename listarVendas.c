@@ -9,51 +9,58 @@
 #include "funcoes.h"
 
 void listarVendas(){
-    FILE *arqCliente;
-    FILE *arqVendas;
-    TVenda vendas;
+
     TCliente cliente;
-    bool flag=false;
+    TVenda venda;
+    char cpf[13];
+    int cad;
+    FILE *arqCliente;
+    FILE *arqVenda;
 
+    //ENTRADA DO CPF DO CLIENTE
     system("cls");
-    printf("\n\nLISTA DE COMPRAS DO CLIENTE: \n\n");
-    printf("Entre com o CPF do cliente: ");
-    scanf(" %[^\n]s", cliente.cpf);
-
+    printf("\nBUSCAR COMPRAS DE CLIENTE: \n\n");
+    printf("CPF: ");
+    scanf(" %[^\n]s", cpf);
+    system("cls");
+    cad = 0;
     arqCliente = fopen("../Clientes.dat", "rb");
-    if(arqCliente!=NULL){
-        arqVendas = fopen("../Vendas.dat", "rb");
-        if (arqVendas!=NULL){
-            while (fread(&cliente, sizeof(TCliente), 1, arqCliente)){
-                while (fread(&vendas, sizeof(TVenda), 1, arqVendas)){
-                    if (strcmp(cliente.cpf, vendas.cpf)==0){
-                        flag=true;
-                        printf("\nIDENTIFICAÇÃO: %d; \tData da compra: %d/%d/%d; \tValor Total: %.2f; \tQtd Total: %d \n\n", vendas.idenVenda,
-                               vendas.dataCompr.dia, vendas.dataCompr.mes, vendas.dataCompr.ano, vendas.valorTot,
-                               vendas.qtdProd);
-                    }
+
+    //VERIFICAÇÃO SE O CLIENTE É CADASTRADO
+    if(arqCliente){
+        while(fread(&cliente, sizeof(TCliente), 1, arqCliente)){
+            if(strcmp(cpf, cliente.cpf) == 0){
+                cad = 1;
+            }
+        }
+        fclose(arqCliente);
+    }
+
+    //SE SIM, PROCURA AS VENDAS
+    if(cad == 1){
+        arqVenda = fopen("../Vendas.dat", "rb");
+
+        if(arqVenda) {
+            printf("\nCOMPRAS DO CLIENTE:\n");
+            printf("----------------------------------------------------------------------------------------------------------\n");
+            while (fread(&venda, sizeof(TVenda), 1, arqVenda)) {
+                if (strcmp(cpf, venda.cpf) == 0) {
+                    printf("%d/%d/%d\tR$ %.2f\t%d produtos\n\n", venda.dataCompr.dia, venda.dataCompr.mes,
+                           venda.dataCompr.ano, venda.valorTot, venda.qtdProd);
                 }
             }
-            if (flag==false){
-                system("cls");
-                printf("NENHUMA COMPRA NESSE CPF FOI ENCONTRADA! \n");
-            }
-            printf("\n");
+            printf("----------------------------------------------------------------------------------------------------------\n\n\n");
             system("pause");
-            fclose(arqVendas);
-            fclose(arqCliente);
-        }
-        else{
+            fclose(arqVenda);
+        }else{
             system("cls");
-            printf ("ERRO NA ABERTURA DO ARQUIVO! \n");
-            printf("\n");
+            printf("\nNENHUMA COMPRA FOI ENCONTRADA!\n\n");
             system("pause");
         }
-    }
-    else{
+    }else{
         system("cls");
-        printf ("ERRO NA ABERTURA DO ARQUIVO! \n");
-        printf("\n");
+        printf("\nCLIENTE NÃO ENCONTRADO!\n\n");
         system("pause");
     }
+
 }

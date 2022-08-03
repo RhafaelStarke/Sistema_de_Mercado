@@ -128,30 +128,6 @@ Mercado_do_Bairro/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/build
 .PHONY : Mercado_do_Bairro/fast
 
-atuaPontos.obj: atuaPontos.c.obj
-.PHONY : atuaPontos.obj
-
-# target to build an object file
-atuaPontos.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/atuaPontos.c.obj
-.PHONY : atuaPontos.c.obj
-
-atuaPontos.i: atuaPontos.c.i
-.PHONY : atuaPontos.i
-
-# target to preprocess a source file
-atuaPontos.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/atuaPontos.c.i
-.PHONY : atuaPontos.c.i
-
-atuaPontos.s: atuaPontos.c.s
-.PHONY : atuaPontos.s
-
-# target to generate assembly for a file
-atuaPontos.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/atuaPontos.c.s
-.PHONY : atuaPontos.c.s
-
 atualClien.obj: atualClien.c.obj
 .PHONY : atualClien.obj
 
@@ -497,9 +473,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Mercado_do_Bairro
-	@echo ... atuaPontos.obj
-	@echo ... atuaPontos.i
-	@echo ... atuaPontos.s
 	@echo ... atualClien.obj
 	@echo ... atualClien.i
 	@echo ... atualClien.s

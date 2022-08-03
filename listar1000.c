@@ -14,9 +14,10 @@ void listar1000(){
     bool flag=false;
 
     system("cls");
-    printf("\n\nLISTA DE CLIENTES COM PONTOS ACIMA DE 1000: \n\n");
+    printf("\n\nLISTA DE CLIENTES COM PONTOS ACIMA DE 1000: \n");
     arq = fopen("../Clientes.dat", "rb");
     if(arq!=NULL){
+        printf("-------------------------------------------------------------------------------------------------------------------------------------------------------------\n");
         while (fread(&listCliente, sizeof(TCliente), 1, arq)){
             if(listCliente.pontos>1000) {
 
@@ -28,8 +29,9 @@ void listar1000(){
                        listCliente.pontos);
             }
         }
+        printf("-------------------------------------------------------------------------------------------------------------------------------------------------------------\n");
         if (flag==false){
-            printf("\n\nNenhum cliente com pontuação maior que 1000! \n\n");
+            printf("\nNenhum cliente com pontuação maior que 1000! \n\n");
         }
         printf("\n");
         system("pause");

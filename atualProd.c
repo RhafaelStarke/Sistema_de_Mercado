@@ -30,6 +30,7 @@ void atualProd()
 
         //USUÁRIO ENTRA COM A IDENTIFICAÇÃO DO PRODUTO QUE SERÁ ATUALIZADO
         system("cls");
+        printf("\nPRODUTOS:");
         printf("\n-----------------------------------------------------------------------------------------------------------------------------------------------------------------\n\n");
         while (fread(&produto, sizeof(TProduto), 1, arq)){
             printf("Identificação: %d; \tSetor: %s; \tNome: %s; \tPreço: R$ %.2lf; \tVencimento: %d/%d/%d; \tEstoque: %d; \n\n",
@@ -57,7 +58,7 @@ void atualProd()
                        novoProduto.dataVal.ano);
                 printf("Quantidade no estoque: %d \n", novoProduto.qtdEstoq);
                 do {
-                    printf("\n\nQuer Mesmo Editar Este Produto? [S]im / [N]ão ");
+                    printf("\n\nQuer Mesmo Editar Este Produto? [S]im / [N]ão\n");
                     scanf(" %c", &edit);
 
                     //ATUALIZAÇÃO DOS DADOS DO PRODUTO
@@ -70,7 +71,7 @@ void atualProd()
                         printf("4. Padaria \n");
                         printf("5. Açougue \n");
                         do{
-                            printf("\n\nNovo setor do produto: ");
+                            printf("\n\nSetor do produto: ");
                             scanf(" %d", &set);
                             switch (set) {
                                 case 1:
@@ -94,17 +95,17 @@ void atualProd()
                             }
                         } while ((set<1)||(set>5));
                         system("cls");
-                        printf("\n\nNovo nome: ");
+                        printf("\n\nNome: ");
                         scanf(" %[^\n]s", novoProduto.nome);
                         do {
-                            printf("Novo preço: ");
+                            printf("Preço: ");
                             scanf(" %lf", &novoProduto.preco);
                             if(novoProduto.preco < 0){
                                 printf("\nPREÇO INVÁLIDO!\n\n");
                             }
                         } while (novoProduto.preco < 0);
                         do{
-                            printf("Nova data de validade: (dd/mm/aaaa) ");
+                            printf("Data de validade: (dd/mm/aaaa) ");
                             scanf(" %d/%d/%d", &novoProduto.dataVal.dia, &novoProduto.dataVal.mes, &novoProduto.dataVal.ano);
                             if ((novoProduto.dataVal.dia < 0)||(novoProduto.dataVal.dia > 31))
                             {
@@ -121,7 +122,7 @@ void atualProd()
                         }while((novoProduto.dataVal.dia < 0)||(novoProduto.dataVal.dia > 31)||(novoProduto.dataVal.mes < 0)||(novoProduto.dataVal.mes > 12)
                                ||(novoProduto.dataVal.ano < 0)||(novoProduto.dataVal.ano < (tm.tm_year+1900)));
                         do {
-                            printf("Nova quantidade no estoque: ");
+                            printf("Quantidade no estoque: ");
                             scanf(" %d", &novoProduto.qtdEstoq);
                             if(novoProduto.qtdEstoq < 0){
                                 printf("\nESTOQUE INVÁLIDO\n\n");
@@ -133,7 +134,7 @@ void atualProd()
                         fwrite(&novoProduto, sizeof(TProduto), 1, arq);
                         fflush(arq);
                         system("cls");
-                        printf("\n\nInformações do Produto Modificadas com Sucesso! \n\n");
+                        printf("\nInformações do Produto Modificadas com Sucesso! \n\n");
                         system("pause");
                         return;
                     } else if ((edit == 'n') || (edit == 'N')) {
@@ -150,7 +151,7 @@ void atualProd()
             system("cls");
             printf("\n\nNENHUM PRODUTO FOI ENCONTRADO COM ESSA IDENTIFICAÇÃO! \n\n");
             do {
-                printf("Deseja cadastrar um novo produto? [S]im / [N]ão  ");
+                printf("Deseja cadastrar um novo produto? [S]im / [N]ão\n");
                 scanf(" %c", &cad);
                 if ((cad == 's') || (cad == 'S')) {
                     cadNovProd();

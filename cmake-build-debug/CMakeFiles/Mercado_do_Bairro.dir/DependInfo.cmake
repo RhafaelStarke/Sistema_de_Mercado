@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/atuaPontos.c" "CMakeFiles/Mercado_do_Bairro.dir/atuaPontos.c.obj" "gcc" "CMakeFiles/Mercado_do_Bairro.dir/atuaPontos.c.obj.d"
   "C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/atualClien.c" "CMakeFiles/Mercado_do_Bairro.dir/atualClien.c.obj" "gcc" "CMakeFiles/Mercado_do_Bairro.dir/atualClien.c.obj.d"
   "C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/atualProd.c" "CMakeFiles/Mercado_do_Bairro.dir/atualProd.c.obj" "gcc" "CMakeFiles/Mercado_do_Bairro.dir/atualProd.c.obj.d"
   "C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cadNovClien.c" "CMakeFiles/Mercado_do_Bairro.dir/cadNovClien.c.obj" "gcc" "CMakeFiles/Mercado_do_Bairro.dir/cadNovClien.c.obj.d"

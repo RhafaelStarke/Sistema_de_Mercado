@@ -78,9 +78,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/atuaPontos.c">
-			<Option target="Mercado_do_Bairro"/>
-		</Unit>
 		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/atualClien.c">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>

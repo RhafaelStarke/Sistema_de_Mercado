@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Mercado_do_Bairro.dir/atuaPontos.c.obj"
-  "CMakeFiles/Mercado_do_Bairro.dir/atuaPontos.c.obj.d"
   "CMakeFiles/Mercado_do_Bairro.dir/atualClien.c.obj"
   "CMakeFiles/Mercado_do_Bairro.dir/atualClien.c.obj.d"
   "CMakeFiles/Mercado_do_Bairro.dir/atualProd.c.obj"

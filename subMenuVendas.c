@@ -30,8 +30,7 @@ void subMenuVendas()
                 return;
             default:
                 system("cls");
-                printf ("COMANDO INVÁLIDO! \n");
-                printf("\n");
+                printf ("\nCOMANDO INVÁLIDO!\n\n");
                 system("pause");
                 break;
         }

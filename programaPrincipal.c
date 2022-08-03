@@ -38,9 +38,9 @@ int main ()
                 break;
             default: //OPÇÃO CASO ENTRE COM UM VALOR DESCONHECIDO
                 system ("cls");
-                printf ("\nCOMANDO INVÁLIDO! \n");
+                printf ("\n\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t\t\t\t\t\t\tCOMANDO INVÁLIDO! \n");
                 printf("\n");
-                system ("pause");
+                system ("\t\t\t\t\t\t\t\t\t\tpause");
                 break;
         }
     } while (1);

@@ -180,24 +180,10 @@ CMakeFiles/Mercado_do_Bairro.dir/atualClien.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Mercado_do_Bairro.dir/atualClien.c.s"
 	"C:\PROGRA~1\JetBrains\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\atualClien.c -o CMakeFiles\Mercado_do_Bairro.dir\atualClien.c.s
 
-CMakeFiles/Mercado_do_Bairro.dir/atuaPontos.c.obj: CMakeFiles/Mercado_do_Bairro.dir/flags.make
-CMakeFiles/Mercado_do_Bairro.dir/atuaPontos.c.obj: ../atuaPontos.c
-CMakeFiles/Mercado_do_Bairro.dir/atuaPontos.c.obj: CMakeFiles/Mercado_do_Bairro.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Mercado_do_Bairro.dir/atuaPontos.c.obj"
-	"C:\PROGRA~1\JetBrains\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Mercado_do_Bairro.dir/atuaPontos.c.obj -MF CMakeFiles\Mercado_do_Bairro.dir\atuaPontos.c.obj.d -o CMakeFiles\Mercado_do_Bairro.dir\atuaPontos.c.obj -c C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\atuaPontos.c
-
-CMakeFiles/Mercado_do_Bairro.dir/atuaPontos.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Mercado_do_Bairro.dir/atuaPontos.c.i"
-	"C:\PROGRA~1\JetBrains\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\atuaPontos.c > CMakeFiles\Mercado_do_Bairro.dir\atuaPontos.c.i
-
-CMakeFiles/Mercado_do_Bairro.dir/atuaPontos.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Mercado_do_Bairro.dir/atuaPontos.c.s"
-	"C:\PROGRA~1\JetBrains\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\atuaPontos.c -o CMakeFiles\Mercado_do_Bairro.dir\atuaPontos.c.s
-
 CMakeFiles/Mercado_do_Bairro.dir/listar18a25.c.obj: CMakeFiles/Mercado_do_Bairro.dir/flags.make
 CMakeFiles/Mercado_do_Bairro.dir/listar18a25.c.obj: ../listar18a25.c
 CMakeFiles/Mercado_do_Bairro.dir/listar18a25.c.obj: CMakeFiles/Mercado_do_Bairro.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/Mercado_do_Bairro.dir/listar18a25.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Mercado_do_Bairro.dir/listar18a25.c.obj"
 	"C:\PROGRA~1\JetBrains\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Mercado_do_Bairro.dir/listar18a25.c.obj -MF CMakeFiles\Mercado_do_Bairro.dir\listar18a25.c.obj.d -o CMakeFiles\Mercado_do_Bairro.dir\listar18a25.c.obj -c C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\listar18a25.c
 
 CMakeFiles/Mercado_do_Bairro.dir/listar18a25.c.i: cmake_force
@@ -211,7 +197,7 @@ CMakeFiles/Mercado_do_Bairro.dir/listar18a25.c.s: cmake_force
 CMakeFiles/Mercado_do_Bairro.dir/listar1000.c.obj: CMakeFiles/Mercado_do_Bairro.dir/flags.make
 CMakeFiles/Mercado_do_Bairro.dir/listar1000.c.obj: ../listar1000.c
 CMakeFiles/Mercado_do_Bairro.dir/listar1000.c.obj: CMakeFiles/Mercado_do_Bairro.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/Mercado_do_Bairro.dir/listar1000.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/Mercado_do_Bairro.dir/listar1000.c.obj"
 	"C:\PROGRA~1\JetBrains\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Mercado_do_Bairro.dir/listar1000.c.obj -MF CMakeFiles\Mercado_do_Bairro.dir\listar1000.c.obj.d -o CMakeFiles\Mercado_do_Bairro.dir\listar1000.c.obj -c C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\listar1000.c
 
 CMakeFiles/Mercado_do_Bairro.dir/listar1000.c.i: cmake_force
@@ -225,7 +211,7 @@ CMakeFiles/Mercado_do_Bairro.dir/listar1000.c.s: cmake_force
 CMakeFiles/Mercado_do_Bairro.dir/listarSet.c.obj: CMakeFiles/Mercado_do_Bairro.dir/flags.make
 CMakeFiles/Mercado_do_Bairro.dir/listarSet.c.obj: ../listarSet.c
 CMakeFiles/Mercado_do_Bairro.dir/listarSet.c.obj: CMakeFiles/Mercado_do_Bairro.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/Mercado_do_Bairro.dir/listarSet.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/Mercado_do_Bairro.dir/listarSet.c.obj"
 	"C:\PROGRA~1\JetBrains\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Mercado_do_Bairro.dir/listarSet.c.obj -MF CMakeFiles\Mercado_do_Bairro.dir\listarSet.c.obj.d -o CMakeFiles\Mercado_do_Bairro.dir\listarSet.c.obj -c C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\listarSet.c
 
 CMakeFiles/Mercado_do_Bairro.dir/listarSet.c.i: cmake_force
@@ -239,7 +225,7 @@ CMakeFiles/Mercado_do_Bairro.dir/listarSet.c.s: cmake_force
 CMakeFiles/Mercado_do_Bairro.dir/estoqBaixo.c.obj: CMakeFiles/Mercado_do_Bairro.dir/flags.make
 CMakeFiles/Mercado_do_Bairro.dir/estoqBaixo.c.obj: ../estoqBaixo.c
 CMakeFiles/Mercado_do_Bairro.dir/estoqBaixo.c.obj: CMakeFiles/Mercado_do_Bairro.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/Mercado_do_Bairro.dir/estoqBaixo.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/Mercado_do_Bairro.dir/estoqBaixo.c.obj"
 	"C:\PROGRA~1\JetBrains\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Mercado_do_Bairro.dir/estoqBaixo.c.obj -MF CMakeFiles\Mercado_do_Bairro.dir\estoqBaixo.c.obj.d -o CMakeFiles\Mercado_do_Bairro.dir\estoqBaixo.c.obj -c C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\estoqBaixo.c
 
 CMakeFiles/Mercado_do_Bairro.dir/estoqBaixo.c.i: cmake_force
@@ -253,7 +239,7 @@ CMakeFiles/Mercado_do_Bairro.dir/estoqBaixo.c.s: cmake_force
 CMakeFiles/Mercado_do_Bairro.dir/venda.c.obj: CMakeFiles/Mercado_do_Bairro.dir/flags.make
 CMakeFiles/Mercado_do_Bairro.dir/venda.c.obj: ../venda.c
 CMakeFiles/Mercado_do_Bairro.dir/venda.c.obj: CMakeFiles/Mercado_do_Bairro.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/Mercado_do_Bairro.dir/venda.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/Mercado_do_Bairro.dir/venda.c.obj"
 	"C:\PROGRA~1\JetBrains\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Mercado_do_Bairro.dir/venda.c.obj -MF CMakeFiles\Mercado_do_Bairro.dir\venda.c.obj.d -o CMakeFiles\Mercado_do_Bairro.dir\venda.c.obj -c C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\venda.c
 
 CMakeFiles/Mercado_do_Bairro.dir/venda.c.i: cmake_force
@@ -267,7 +253,7 @@ CMakeFiles/Mercado_do_Bairro.dir/venda.c.s: cmake_force
 CMakeFiles/Mercado_do_Bairro.dir/listarVendas.c.obj: CMakeFiles/Mercado_do_Bairro.dir/flags.make
 CMakeFiles/Mercado_do_Bairro.dir/listarVendas.c.obj: ../listarVendas.c
 CMakeFiles/Mercado_do_Bairro.dir/listarVendas.c.obj: CMakeFiles/Mercado_do_Bairro.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/Mercado_do_Bairro.dir/listarVendas.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/Mercado_do_Bairro.dir/listarVendas.c.obj"
 	"C:\PROGRA~1\JetBrains\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Mercado_do_Bairro.dir/listarVendas.c.obj -MF CMakeFiles\Mercado_do_Bairro.dir\listarVendas.c.obj.d -o CMakeFiles\Mercado_do_Bairro.dir\listarVendas.c.obj -c C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\listarVendas.c
 
 CMakeFiles/Mercado_do_Bairro.dir/listarVendas.c.i: cmake_force
@@ -288,7 +274,6 @@ Mercado_do_Bairro_OBJECTS = \
 "CMakeFiles/Mercado_do_Bairro.dir/atualProd.c.obj" \
 "CMakeFiles/Mercado_do_Bairro.dir/cadNovClien.c.obj" \
 "CMakeFiles/Mercado_do_Bairro.dir/atualClien.c.obj" \
-"CMakeFiles/Mercado_do_Bairro.dir/atuaPontos.c.obj" \
 "CMakeFiles/Mercado_do_Bairro.dir/listar18a25.c.obj" \
 "CMakeFiles/Mercado_do_Bairro.dir/listar1000.c.obj" \
 "CMakeFiles/Mercado_do_Bairro.dir/listarSet.c.obj" \
@@ -307,7 +292,6 @@ Mercado_do_Bairro.exe: CMakeFiles/Mercado_do_Bairro.dir/cadNovProd.c.obj
 Mercado_do_Bairro.exe: CMakeFiles/Mercado_do_Bairro.dir/atualProd.c.obj
 Mercado_do_Bairro.exe: CMakeFiles/Mercado_do_Bairro.dir/cadNovClien.c.obj
 Mercado_do_Bairro.exe: CMakeFiles/Mercado_do_Bairro.dir/atualClien.c.obj
-Mercado_do_Bairro.exe: CMakeFiles/Mercado_do_Bairro.dir/atuaPontos.c.obj
 Mercado_do_Bairro.exe: CMakeFiles/Mercado_do_Bairro.dir/listar18a25.c.obj
 Mercado_do_Bairro.exe: CMakeFiles/Mercado_do_Bairro.dir/listar1000.c.obj
 Mercado_do_Bairro.exe: CMakeFiles/Mercado_do_Bairro.dir/listarSet.c.obj
@@ -318,7 +302,7 @@ Mercado_do_Bairro.exe: CMakeFiles/Mercado_do_Bairro.dir/build.make
 Mercado_do_Bairro.exe: CMakeFiles/Mercado_do_Bairro.dir/linklibs.rsp
 Mercado_do_Bairro.exe: CMakeFiles/Mercado_do_Bairro.dir/objects1.rsp
 Mercado_do_Bairro.exe: CMakeFiles/Mercado_do_Bairro.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking C executable Mercado_do_Bairro.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\rh4f4\OneDrive\Documentos\Sistema_de_Mercado\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking C executable Mercado_do_Bairro.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Mercado_do_Bairro.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

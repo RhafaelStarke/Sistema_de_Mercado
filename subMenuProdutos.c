@@ -39,7 +39,7 @@ void subMenuProdutos()
                 return;
             default: //OPÇÃO CASO ENTRE COM O VALOR DESCONHECIDO
                 system ("cls");
-                printf("COMANDO INVÁLIDO! \n");
+                printf("\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t\t\t\t\t\t\tCOMANDO INVÁLIDO! \n");
                 system("pause");
                 break;
         }

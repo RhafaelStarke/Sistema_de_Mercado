@@ -14,8 +14,6 @@ void atualClien()
 {
     FILE *arq;
 
-    system("cls");
-    printf("\n\nATUALIZAÇÃO DE DADOS DO CLIENTE: \n");
     arq = fopen("../Clientes.dat", "r+b");
     if (arq != NULL)
     {
@@ -28,6 +26,19 @@ void atualClien()
         struct tm tm = *localtime(&dataSist);
 
         //USUÁRIO ENTRA COM O CPF QUE TERÁ SEUS DADOS EDITADOS
+
+        system("cls");
+        printf("\nCLIENTES:");
+        printf("\n------------------------------------------------------------------------------------------------------------------------------------------------------------\n");
+            while (fread(&cliente, sizeof(TCliente), 1, arq)){
+                printf("CPF: %s; Nome: %s; Nascimento: %d/%d/%d; Idade: %d anos; End: %s; Cidade: %s; Estado: %s; Pontos: %d \n\n",
+                       cliente.cpf, cliente.nomeClien, cliente.nasc.dia, cliente.nasc.mes,
+                       cliente.nasc.ano, cliente.idade, cliente.end, cliente.cid, cliente.est,
+                       cliente.pontos);
+            }
+        printf("------------------------------------------------------------------------------------------------------------------------------------------------------------\n");
+
+        printf("\n\nATUALIZAÇÃO DE DADOS DO CLIENTE: \n");
         printf("\n\nEntre com o CPF do cliente que quer modificar as informações: ");
         scanf(" %[^\n]s", cpf);
         do
@@ -51,7 +62,7 @@ void atualClien()
                 printf("Estado: %s \n", cliente.est);
                 printf("Pontos: %d \n", cliente.pontos);
                 do {
-                    printf("\nQUER MESMO EDITAR INFORMAÇÕES DESTE CLIENTE [S/N]? ");
+                    printf("\nQUER MESMO EDITAR INFORMAÇÕES DESTE CLIENTE? [S]im / [N]ão\n");
                     scanf(" %c", &edit);
                     if ((edit == 's') || (edit == 'S')) {
 
@@ -66,14 +77,14 @@ void atualClien()
                             printf("Data de nascimento (dd/mm/aaaa): ");
                             scanf(" %d/%d/%d", &cliente.nasc.dia, &cliente.nasc.mes, &cliente.nasc.ano);
                             if ((cliente.nasc.dia < 0) || (cliente.nasc.dia > 31)) {
-                                printf("DIGITE UM DIA VÁLIDO! \n");
+                                printf("\nDIA INVÁLIDO!\n\n");
                             } else if ((cliente.nasc.mes < 0) || (cliente.nasc.mes > 12)) {
-                                printf("DIGITE UM MÊS VÁLIDO! \n");
+                                printf("\nMÊS INVÁLIDO!\n\n");
                             } else if ((cliente.nasc.ano < 0)) {
-                                printf("DIGITE UM ANO VÁLIDO! \n");
+                                printf("\nANO INVÁLIDO!\n\n");
                             }
-                        } while ((cliente.nasc.dia < 0) || (cliente.nasc.dia > 31) || (cliente.nasc.mes < 0) ||
-                                 (cliente.nasc.mes > 12) || (cliente.nasc.ano < 0));
+                        } while ((cliente.nasc.dia <= 0) || (cliente.nasc.dia > 31) || (cliente.nasc.mes <= 0) ||
+                                 (cliente.nasc.mes > 12) || (cliente.nasc.ano <= 0));
                         if ((cliente.nasc.dia <= tm.tm_mday) || (cliente.nasc.mes <= (tm.tm_mon + 1))) {
                             cliente.idade = (tm.tm_year + 1900) - cliente.nasc.ano;
                         } else {
@@ -92,7 +103,7 @@ void atualClien()
                         fwrite(&cliente, sizeof(TCliente), 1, arq);
                         fflush(arq);
                         system("cls");
-                        printf("\n\nDADOS DO CLIENTE ATUALIZADO COM SUCESSO! \n\n");
+                        printf("\nDADOS DO CLIENTE ATUALIZADO COM SUCESSO! \n\n");
                         system("pause");
                         fclose(arq);
                         return;
@@ -113,9 +124,9 @@ void atualClien()
         {
             char cad;
             system("cls");
-            printf ("NENHUM CPF ENCONTRADO! \n");
+            printf ("\nNENHUM CPF ENCONTRADO!\n\n");
             do {
-                printf("Deseja cadastrar um novo cliente [S/N]? ");
+                printf("Deseja cadastrar um novo cliente? [S]im / [N]ão\n");
                 scanf(" %c", &cad);
                 if ((cad == 's') || (cad == 'S')) {
                     cadNovClien();
@@ -123,7 +134,7 @@ void atualClien()
                 } else if ((cad == 'n') || (cad == 'N')) {
                     return;
                 } else {
-                    printf("Comando inválido! \n");
+                    printf("\nCOMANDO INVÁLIDO!\n\n");
                 }
             } while (1);
         }

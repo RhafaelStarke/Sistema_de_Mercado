@@ -14,9 +14,10 @@ void listar18a25(){
     bool flag=false;
 
     system("cls");
-    printf("\n\nLISTA DE CLIENTES COM IDADE ENTRE 18 A 25 ANOS: \n\n");
+    printf("\n\nCLIENTES COM IDADE ENTRE 18 A 25 ANOS: \n");
     arq = fopen("../Clientes.dat", "rb");
     if(arq!=NULL){
+        printf("-------------------------------------------------------------------------------------------------------------------------------------------------------------\n");
         while (fread(&listCliente, sizeof(TCliente), 1, arq)){
             if((listCliente.idade>=18)&&(listCliente.idade<=25)) {
 
@@ -28,6 +29,7 @@ void listar18a25(){
                        listCliente.pontos);
             }
         }
+        printf("-------------------------------------------------------------------------------------------------------------------------------------------------------------\n");
         if (flag==false){
             printf("\n\nNenhum cliente com idade entre 18 a 25 anos! \n\n");
         }
