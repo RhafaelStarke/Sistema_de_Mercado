@@ -14,7 +14,7 @@ void estoqBaixo(){
 
     system("cls");
     printf("\nLISTA DE ESTOQUE BAIXO: \n\n");
-    arq = fopen("../Produtos.dat", "rb");
+    arq = fopen("../arquivos/Produtos.dat", "rb");
     if(arq!=NULL){
         printf("----------------------------------------------------------------------------------------------------------------------------------------------------------------\n");
         while (fread(&produtos, sizeof(TProduto), 1, arq)){

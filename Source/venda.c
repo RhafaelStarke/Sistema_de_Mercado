@@ -18,7 +18,7 @@ void venda(){
     struct tm dataSist=*localtime(&t);
     FILE *arqCliente;
     FILE *arqProdutos;
-    FILE *arqVendas = fopen("../Vendas.dat", "rb");
+    FILE *arqVendas = fopen("../arquivos/Vendas.dat", "rb");
 
     //GERADOR DE CÓDIGOS DE VENDAS
     if (arqVendas) {
@@ -28,7 +28,7 @@ void venda(){
         fclose(arqVendas);
     }
 
-    arqVendas = fopen("../Vendas.dat", "ab");
+    arqVendas = fopen("../arquivos/Vendas.dat", "ab");
 
     if (arqVendas) {
         venda.idenVenda = cod;
@@ -41,7 +41,7 @@ void venda(){
         scanf(" %[^\n]s", venda.cpf);
         cad = 1;
 
-        arqCliente = fopen("../Clientes.dat", "rb");
+        arqCliente = fopen("../arquivos/Clientes.dat", "rb");
         if (arqCliente) {
 
             //VERIFICA SE O CLIENTE JÁ É CADASTRADO
@@ -79,7 +79,7 @@ void venda(){
             do {
                 printf("\n\nCódigo do produto: ");
                 scanf(" %d", &itensCompra.codProd);
-                arqProdutos = fopen("../Produtos.dat", "rb+");
+                arqProdutos = fopen("../arquivos/Produtos.dat", "rb+");
                 if (arqProdutos) {
                     exis = 0;
 
@@ -118,7 +118,7 @@ void venda(){
                 scanf(" %d", &cont);
             } while (cont == 1);
             venda.valorTot = itensCompra.precoTot;
-            arqCliente = fopen("../Clientes.dat", "rb+");
+            arqCliente = fopen("../arquivos/Clientes.dat", "rb+");
 
             system("cls");
             printf("\n\nIdentificação da venda: %d \n", venda.idenVenda);

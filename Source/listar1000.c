@@ -15,7 +15,7 @@ void listar1000(){
 
     system("cls");
     printf("\n\nLISTA DE CLIENTES COM PONTOS ACIMA DE 1000: \n");
-    arq = fopen("../Clientes.dat", "rb");
+    arq = fopen("../arquivos/Clientes.dat", "rb");
     if(arq!=NULL){
         printf("-------------------------------------------------------------------------------------------------------------------------------------------------------------\n");
         while (fread(&listCliente, sizeof(TCliente), 1, arq)){

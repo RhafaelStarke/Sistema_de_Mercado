@@ -13,7 +13,7 @@ void cadNovClien()
 {
     FILE *arq;
 
-    arq = fopen ("../Clientes.dat", "ab+");
+    arq = fopen ("../arquivos/Clientes.dat", "ab+");
     if (arq != NULL)
     {
         TCliente cliente, comp;

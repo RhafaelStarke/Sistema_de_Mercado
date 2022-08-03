@@ -14,7 +14,7 @@ void atualClien()
 {
     FILE *arq;
 
-    arq = fopen("../Clientes.dat", "r+b");
+    arq = fopen("../arquivos/Clientes.dat", "r+b");
     if (arq != NULL)
     {
         char cpf[13];

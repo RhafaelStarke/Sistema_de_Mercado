@@ -4,7 +4,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <windows.h>
-#include <stdbool.h>
 #include "registros.h"
 #include "funcoes.h"
 
@@ -24,7 +23,7 @@ void listarVendas(){
     scanf(" %[^\n]s", cpf);
     system("cls");
     cad = 0;
-    arqCliente = fopen("../Clientes.dat", "rb");
+    arqCliente = fopen("../arquivos/Clientes.dat", "rb");
 
     //VERIFICAÇÃO SE O CLIENTE É CADASTRADO
     if(arqCliente){
@@ -38,7 +37,7 @@ void listarVendas(){
 
     //SE SIM, PROCURA AS VENDAS
     if(cad == 1){
-        arqVenda = fopen("../Vendas.dat", "rb");
+        arqVenda = fopen("../arquivos/Vendas.dat", "rb");
 
         if(arqVenda) {
             printf("\nCOMPRAS DO CLIENTE:\n");

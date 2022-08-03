@@ -19,7 +19,7 @@ void cadNovProd()
     dataSist = time(NULL);
     struct tm tm = *localtime(&dataSist);
 
-    arq = fopen ("../Produtos.dat", "ab+");
+    arq = fopen ("../arquivos/Produtos.dat", "ab+");
     if (arq != NULL)
     {
         while (fread(&produtos, sizeof(TProduto), 1, arq)){

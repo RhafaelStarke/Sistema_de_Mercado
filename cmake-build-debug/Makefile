@@ -128,341 +128,341 @@ Mercado_do_Bairro/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/build
 .PHONY : Mercado_do_Bairro/fast
 
-atualClien.obj: atualClien.c.obj
-.PHONY : atualClien.obj
+Source/atualClien.obj: Source/atualClien.c.obj
+.PHONY : Source/atualClien.obj
 
 # target to build an object file
-atualClien.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/atualClien.c.obj
-.PHONY : atualClien.c.obj
+Source/atualClien.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/atualClien.c.obj
+.PHONY : Source/atualClien.c.obj
 
-atualClien.i: atualClien.c.i
-.PHONY : atualClien.i
+Source/atualClien.i: Source/atualClien.c.i
+.PHONY : Source/atualClien.i
 
 # target to preprocess a source file
-atualClien.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/atualClien.c.i
-.PHONY : atualClien.c.i
+Source/atualClien.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/atualClien.c.i
+.PHONY : Source/atualClien.c.i
 
-atualClien.s: atualClien.c.s
-.PHONY : atualClien.s
+Source/atualClien.s: Source/atualClien.c.s
+.PHONY : Source/atualClien.s
 
 # target to generate assembly for a file
-atualClien.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/atualClien.c.s
-.PHONY : atualClien.c.s
+Source/atualClien.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/atualClien.c.s
+.PHONY : Source/atualClien.c.s
 
-atualProd.obj: atualProd.c.obj
-.PHONY : atualProd.obj
+Source/atualProd.obj: Source/atualProd.c.obj
+.PHONY : Source/atualProd.obj
 
 # target to build an object file
-atualProd.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/atualProd.c.obj
-.PHONY : atualProd.c.obj
+Source/atualProd.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/atualProd.c.obj
+.PHONY : Source/atualProd.c.obj
 
-atualProd.i: atualProd.c.i
-.PHONY : atualProd.i
+Source/atualProd.i: Source/atualProd.c.i
+.PHONY : Source/atualProd.i
 
 # target to preprocess a source file
-atualProd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/atualProd.c.i
-.PHONY : atualProd.c.i
+Source/atualProd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/atualProd.c.i
+.PHONY : Source/atualProd.c.i
 
-atualProd.s: atualProd.c.s
-.PHONY : atualProd.s
+Source/atualProd.s: Source/atualProd.c.s
+.PHONY : Source/atualProd.s
 
 # target to generate assembly for a file
-atualProd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/atualProd.c.s
-.PHONY : atualProd.c.s
+Source/atualProd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/atualProd.c.s
+.PHONY : Source/atualProd.c.s
 
-cadNovClien.obj: cadNovClien.c.obj
-.PHONY : cadNovClien.obj
+Source/cadNovClien.obj: Source/cadNovClien.c.obj
+.PHONY : Source/cadNovClien.obj
 
 # target to build an object file
-cadNovClien.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/cadNovClien.c.obj
-.PHONY : cadNovClien.c.obj
+Source/cadNovClien.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/cadNovClien.c.obj
+.PHONY : Source/cadNovClien.c.obj
 
-cadNovClien.i: cadNovClien.c.i
-.PHONY : cadNovClien.i
+Source/cadNovClien.i: Source/cadNovClien.c.i
+.PHONY : Source/cadNovClien.i
 
 # target to preprocess a source file
-cadNovClien.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/cadNovClien.c.i
-.PHONY : cadNovClien.c.i
+Source/cadNovClien.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/cadNovClien.c.i
+.PHONY : Source/cadNovClien.c.i
 
-cadNovClien.s: cadNovClien.c.s
-.PHONY : cadNovClien.s
+Source/cadNovClien.s: Source/cadNovClien.c.s
+.PHONY : Source/cadNovClien.s
 
 # target to generate assembly for a file
-cadNovClien.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/cadNovClien.c.s
-.PHONY : cadNovClien.c.s
+Source/cadNovClien.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/cadNovClien.c.s
+.PHONY : Source/cadNovClien.c.s
 
-cadNovProd.obj: cadNovProd.c.obj
-.PHONY : cadNovProd.obj
+Source/cadNovProd.obj: Source/cadNovProd.c.obj
+.PHONY : Source/cadNovProd.obj
 
 # target to build an object file
-cadNovProd.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/cadNovProd.c.obj
-.PHONY : cadNovProd.c.obj
+Source/cadNovProd.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/cadNovProd.c.obj
+.PHONY : Source/cadNovProd.c.obj
 
-cadNovProd.i: cadNovProd.c.i
-.PHONY : cadNovProd.i
+Source/cadNovProd.i: Source/cadNovProd.c.i
+.PHONY : Source/cadNovProd.i
 
 # target to preprocess a source file
-cadNovProd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/cadNovProd.c.i
-.PHONY : cadNovProd.c.i
+Source/cadNovProd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/cadNovProd.c.i
+.PHONY : Source/cadNovProd.c.i
 
-cadNovProd.s: cadNovProd.c.s
-.PHONY : cadNovProd.s
+Source/cadNovProd.s: Source/cadNovProd.c.s
+.PHONY : Source/cadNovProd.s
 
 # target to generate assembly for a file
-cadNovProd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/cadNovProd.c.s
-.PHONY : cadNovProd.c.s
+Source/cadNovProd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/cadNovProd.c.s
+.PHONY : Source/cadNovProd.c.s
 
-estoqBaixo.obj: estoqBaixo.c.obj
-.PHONY : estoqBaixo.obj
+Source/estoqBaixo.obj: Source/estoqBaixo.c.obj
+.PHONY : Source/estoqBaixo.obj
 
 # target to build an object file
-estoqBaixo.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/estoqBaixo.c.obj
-.PHONY : estoqBaixo.c.obj
+Source/estoqBaixo.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/estoqBaixo.c.obj
+.PHONY : Source/estoqBaixo.c.obj
 
-estoqBaixo.i: estoqBaixo.c.i
-.PHONY : estoqBaixo.i
+Source/estoqBaixo.i: Source/estoqBaixo.c.i
+.PHONY : Source/estoqBaixo.i
 
 # target to preprocess a source file
-estoqBaixo.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/estoqBaixo.c.i
-.PHONY : estoqBaixo.c.i
+Source/estoqBaixo.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/estoqBaixo.c.i
+.PHONY : Source/estoqBaixo.c.i
 
-estoqBaixo.s: estoqBaixo.c.s
-.PHONY : estoqBaixo.s
+Source/estoqBaixo.s: Source/estoqBaixo.c.s
+.PHONY : Source/estoqBaixo.s
 
 # target to generate assembly for a file
-estoqBaixo.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/estoqBaixo.c.s
-.PHONY : estoqBaixo.c.s
+Source/estoqBaixo.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/estoqBaixo.c.s
+.PHONY : Source/estoqBaixo.c.s
 
-listar1000.obj: listar1000.c.obj
-.PHONY : listar1000.obj
+Source/listar1000.obj: Source/listar1000.c.obj
+.PHONY : Source/listar1000.obj
 
 # target to build an object file
-listar1000.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/listar1000.c.obj
-.PHONY : listar1000.c.obj
+Source/listar1000.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/listar1000.c.obj
+.PHONY : Source/listar1000.c.obj
 
-listar1000.i: listar1000.c.i
-.PHONY : listar1000.i
+Source/listar1000.i: Source/listar1000.c.i
+.PHONY : Source/listar1000.i
 
 # target to preprocess a source file
-listar1000.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/listar1000.c.i
-.PHONY : listar1000.c.i
+Source/listar1000.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/listar1000.c.i
+.PHONY : Source/listar1000.c.i
 
-listar1000.s: listar1000.c.s
-.PHONY : listar1000.s
+Source/listar1000.s: Source/listar1000.c.s
+.PHONY : Source/listar1000.s
 
 # target to generate assembly for a file
-listar1000.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/listar1000.c.s
-.PHONY : listar1000.c.s
+Source/listar1000.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/listar1000.c.s
+.PHONY : Source/listar1000.c.s
 
-listar18a25.obj: listar18a25.c.obj
-.PHONY : listar18a25.obj
+Source/listar18a25.obj: Source/listar18a25.c.obj
+.PHONY : Source/listar18a25.obj
 
 # target to build an object file
-listar18a25.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/listar18a25.c.obj
-.PHONY : listar18a25.c.obj
+Source/listar18a25.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/listar18a25.c.obj
+.PHONY : Source/listar18a25.c.obj
 
-listar18a25.i: listar18a25.c.i
-.PHONY : listar18a25.i
+Source/listar18a25.i: Source/listar18a25.c.i
+.PHONY : Source/listar18a25.i
 
 # target to preprocess a source file
-listar18a25.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/listar18a25.c.i
-.PHONY : listar18a25.c.i
+Source/listar18a25.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/listar18a25.c.i
+.PHONY : Source/listar18a25.c.i
 
-listar18a25.s: listar18a25.c.s
-.PHONY : listar18a25.s
+Source/listar18a25.s: Source/listar18a25.c.s
+.PHONY : Source/listar18a25.s
 
 # target to generate assembly for a file
-listar18a25.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/listar18a25.c.s
-.PHONY : listar18a25.c.s
+Source/listar18a25.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/listar18a25.c.s
+.PHONY : Source/listar18a25.c.s
 
-listarSet.obj: listarSet.c.obj
-.PHONY : listarSet.obj
+Source/listarSet.obj: Source/listarSet.c.obj
+.PHONY : Source/listarSet.obj
 
 # target to build an object file
-listarSet.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/listarSet.c.obj
-.PHONY : listarSet.c.obj
+Source/listarSet.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/listarSet.c.obj
+.PHONY : Source/listarSet.c.obj
 
-listarSet.i: listarSet.c.i
-.PHONY : listarSet.i
+Source/listarSet.i: Source/listarSet.c.i
+.PHONY : Source/listarSet.i
 
 # target to preprocess a source file
-listarSet.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/listarSet.c.i
-.PHONY : listarSet.c.i
+Source/listarSet.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/listarSet.c.i
+.PHONY : Source/listarSet.c.i
 
-listarSet.s: listarSet.c.s
-.PHONY : listarSet.s
+Source/listarSet.s: Source/listarSet.c.s
+.PHONY : Source/listarSet.s
 
 # target to generate assembly for a file
-listarSet.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/listarSet.c.s
-.PHONY : listarSet.c.s
+Source/listarSet.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/listarSet.c.s
+.PHONY : Source/listarSet.c.s
 
-listarVendas.obj: listarVendas.c.obj
-.PHONY : listarVendas.obj
+Source/listarVendas.obj: Source/listarVendas.c.obj
+.PHONY : Source/listarVendas.obj
 
 # target to build an object file
-listarVendas.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/listarVendas.c.obj
-.PHONY : listarVendas.c.obj
+Source/listarVendas.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/listarVendas.c.obj
+.PHONY : Source/listarVendas.c.obj
 
-listarVendas.i: listarVendas.c.i
-.PHONY : listarVendas.i
+Source/listarVendas.i: Source/listarVendas.c.i
+.PHONY : Source/listarVendas.i
 
 # target to preprocess a source file
-listarVendas.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/listarVendas.c.i
-.PHONY : listarVendas.c.i
+Source/listarVendas.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/listarVendas.c.i
+.PHONY : Source/listarVendas.c.i
 
-listarVendas.s: listarVendas.c.s
-.PHONY : listarVendas.s
+Source/listarVendas.s: Source/listarVendas.c.s
+.PHONY : Source/listarVendas.s
 
 # target to generate assembly for a file
-listarVendas.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/listarVendas.c.s
-.PHONY : listarVendas.c.s
+Source/listarVendas.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/listarVendas.c.s
+.PHONY : Source/listarVendas.c.s
 
-programaPrincipal.obj: programaPrincipal.c.obj
-.PHONY : programaPrincipal.obj
+Source/programaPrincipal.obj: Source/programaPrincipal.c.obj
+.PHONY : Source/programaPrincipal.obj
 
 # target to build an object file
-programaPrincipal.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/programaPrincipal.c.obj
-.PHONY : programaPrincipal.c.obj
+Source/programaPrincipal.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/programaPrincipal.c.obj
+.PHONY : Source/programaPrincipal.c.obj
 
-programaPrincipal.i: programaPrincipal.c.i
-.PHONY : programaPrincipal.i
+Source/programaPrincipal.i: Source/programaPrincipal.c.i
+.PHONY : Source/programaPrincipal.i
 
 # target to preprocess a source file
-programaPrincipal.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/programaPrincipal.c.i
-.PHONY : programaPrincipal.c.i
+Source/programaPrincipal.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/programaPrincipal.c.i
+.PHONY : Source/programaPrincipal.c.i
 
-programaPrincipal.s: programaPrincipal.c.s
-.PHONY : programaPrincipal.s
+Source/programaPrincipal.s: Source/programaPrincipal.c.s
+.PHONY : Source/programaPrincipal.s
 
 # target to generate assembly for a file
-programaPrincipal.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/programaPrincipal.c.s
-.PHONY : programaPrincipal.c.s
+Source/programaPrincipal.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/programaPrincipal.c.s
+.PHONY : Source/programaPrincipal.c.s
 
-subMenuClientes.obj: subMenuClientes.c.obj
-.PHONY : subMenuClientes.obj
+Source/subMenuClientes.obj: Source/subMenuClientes.c.obj
+.PHONY : Source/subMenuClientes.obj
 
 # target to build an object file
-subMenuClientes.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/subMenuClientes.c.obj
-.PHONY : subMenuClientes.c.obj
+Source/subMenuClientes.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/subMenuClientes.c.obj
+.PHONY : Source/subMenuClientes.c.obj
 
-subMenuClientes.i: subMenuClientes.c.i
-.PHONY : subMenuClientes.i
+Source/subMenuClientes.i: Source/subMenuClientes.c.i
+.PHONY : Source/subMenuClientes.i
 
 # target to preprocess a source file
-subMenuClientes.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/subMenuClientes.c.i
-.PHONY : subMenuClientes.c.i
+Source/subMenuClientes.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/subMenuClientes.c.i
+.PHONY : Source/subMenuClientes.c.i
 
-subMenuClientes.s: subMenuClientes.c.s
-.PHONY : subMenuClientes.s
+Source/subMenuClientes.s: Source/subMenuClientes.c.s
+.PHONY : Source/subMenuClientes.s
 
 # target to generate assembly for a file
-subMenuClientes.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/subMenuClientes.c.s
-.PHONY : subMenuClientes.c.s
+Source/subMenuClientes.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/subMenuClientes.c.s
+.PHONY : Source/subMenuClientes.c.s
 
-subMenuProdutos.obj: subMenuProdutos.c.obj
-.PHONY : subMenuProdutos.obj
+Source/subMenuProdutos.obj: Source/subMenuProdutos.c.obj
+.PHONY : Source/subMenuProdutos.obj
 
 # target to build an object file
-subMenuProdutos.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/subMenuProdutos.c.obj
-.PHONY : subMenuProdutos.c.obj
+Source/subMenuProdutos.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/subMenuProdutos.c.obj
+.PHONY : Source/subMenuProdutos.c.obj
 
-subMenuProdutos.i: subMenuProdutos.c.i
-.PHONY : subMenuProdutos.i
+Source/subMenuProdutos.i: Source/subMenuProdutos.c.i
+.PHONY : Source/subMenuProdutos.i
 
 # target to preprocess a source file
-subMenuProdutos.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/subMenuProdutos.c.i
-.PHONY : subMenuProdutos.c.i
+Source/subMenuProdutos.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/subMenuProdutos.c.i
+.PHONY : Source/subMenuProdutos.c.i
 
-subMenuProdutos.s: subMenuProdutos.c.s
-.PHONY : subMenuProdutos.s
+Source/subMenuProdutos.s: Source/subMenuProdutos.c.s
+.PHONY : Source/subMenuProdutos.s
 
 # target to generate assembly for a file
-subMenuProdutos.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/subMenuProdutos.c.s
-.PHONY : subMenuProdutos.c.s
+Source/subMenuProdutos.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/subMenuProdutos.c.s
+.PHONY : Source/subMenuProdutos.c.s
 
-subMenuVendas.obj: subMenuVendas.c.obj
-.PHONY : subMenuVendas.obj
+Source/subMenuVendas.obj: Source/subMenuVendas.c.obj
+.PHONY : Source/subMenuVendas.obj
 
 # target to build an object file
-subMenuVendas.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/subMenuVendas.c.obj
-.PHONY : subMenuVendas.c.obj
+Source/subMenuVendas.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/subMenuVendas.c.obj
+.PHONY : Source/subMenuVendas.c.obj
 
-subMenuVendas.i: subMenuVendas.c.i
-.PHONY : subMenuVendas.i
+Source/subMenuVendas.i: Source/subMenuVendas.c.i
+.PHONY : Source/subMenuVendas.i
 
 # target to preprocess a source file
-subMenuVendas.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/subMenuVendas.c.i
-.PHONY : subMenuVendas.c.i
+Source/subMenuVendas.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/subMenuVendas.c.i
+.PHONY : Source/subMenuVendas.c.i
 
-subMenuVendas.s: subMenuVendas.c.s
-.PHONY : subMenuVendas.s
+Source/subMenuVendas.s: Source/subMenuVendas.c.s
+.PHONY : Source/subMenuVendas.s
 
 # target to generate assembly for a file
-subMenuVendas.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/subMenuVendas.c.s
-.PHONY : subMenuVendas.c.s
+Source/subMenuVendas.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/subMenuVendas.c.s
+.PHONY : Source/subMenuVendas.c.s
 
-venda.obj: venda.c.obj
-.PHONY : venda.obj
+Source/venda.obj: Source/venda.c.obj
+.PHONY : Source/venda.obj
 
 # target to build an object file
-venda.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/venda.c.obj
-.PHONY : venda.c.obj
+Source/venda.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/venda.c.obj
+.PHONY : Source/venda.c.obj
 
-venda.i: venda.c.i
-.PHONY : venda.i
+Source/venda.i: Source/venda.c.i
+.PHONY : Source/venda.i
 
 # target to preprocess a source file
-venda.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/venda.c.i
-.PHONY : venda.c.i
+Source/venda.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/venda.c.i
+.PHONY : Source/venda.c.i
 
-venda.s: venda.c.s
-.PHONY : venda.s
+Source/venda.s: Source/venda.c.s
+.PHONY : Source/venda.s
 
 # target to generate assembly for a file
-venda.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/venda.c.s
-.PHONY : venda.c.s
+Source/venda.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Mercado_do_Bairro.dir\build.make CMakeFiles/Mercado_do_Bairro.dir/Source/venda.c.s
+.PHONY : Source/venda.c.s
 
 # Help Target
 help:
@@ -473,48 +473,48 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Mercado_do_Bairro
-	@echo ... atualClien.obj
-	@echo ... atualClien.i
-	@echo ... atualClien.s
-	@echo ... atualProd.obj
-	@echo ... atualProd.i
-	@echo ... atualProd.s
-	@echo ... cadNovClien.obj
-	@echo ... cadNovClien.i
-	@echo ... cadNovClien.s
-	@echo ... cadNovProd.obj
-	@echo ... cadNovProd.i
-	@echo ... cadNovProd.s
-	@echo ... estoqBaixo.obj
-	@echo ... estoqBaixo.i
-	@echo ... estoqBaixo.s
-	@echo ... listar1000.obj
-	@echo ... listar1000.i
-	@echo ... listar1000.s
-	@echo ... listar18a25.obj
-	@echo ... listar18a25.i
-	@echo ... listar18a25.s
-	@echo ... listarSet.obj
-	@echo ... listarSet.i
-	@echo ... listarSet.s
-	@echo ... listarVendas.obj
-	@echo ... listarVendas.i
-	@echo ... listarVendas.s
-	@echo ... programaPrincipal.obj
-	@echo ... programaPrincipal.i
-	@echo ... programaPrincipal.s
-	@echo ... subMenuClientes.obj
-	@echo ... subMenuClientes.i
-	@echo ... subMenuClientes.s
-	@echo ... subMenuProdutos.obj
-	@echo ... subMenuProdutos.i
-	@echo ... subMenuProdutos.s
-	@echo ... subMenuVendas.obj
-	@echo ... subMenuVendas.i
-	@echo ... subMenuVendas.s
-	@echo ... venda.obj
-	@echo ... venda.i
-	@echo ... venda.s
+	@echo ... Source/atualClien.obj
+	@echo ... Source/atualClien.i
+	@echo ... Source/atualClien.s
+	@echo ... Source/atualProd.obj
+	@echo ... Source/atualProd.i
+	@echo ... Source/atualProd.s
+	@echo ... Source/cadNovClien.obj
+	@echo ... Source/cadNovClien.i
+	@echo ... Source/cadNovClien.s
+	@echo ... Source/cadNovProd.obj
+	@echo ... Source/cadNovProd.i
+	@echo ... Source/cadNovProd.s
+	@echo ... Source/estoqBaixo.obj
+	@echo ... Source/estoqBaixo.i
+	@echo ... Source/estoqBaixo.s
+	@echo ... Source/listar1000.obj
+	@echo ... Source/listar1000.i
+	@echo ... Source/listar1000.s
+	@echo ... Source/listar18a25.obj
+	@echo ... Source/listar18a25.i
+	@echo ... Source/listar18a25.s
+	@echo ... Source/listarSet.obj
+	@echo ... Source/listarSet.i
+	@echo ... Source/listarSet.s
+	@echo ... Source/listarVendas.obj
+	@echo ... Source/listarVendas.i
+	@echo ... Source/listarVendas.s
+	@echo ... Source/programaPrincipal.obj
+	@echo ... Source/programaPrincipal.i
+	@echo ... Source/programaPrincipal.s
+	@echo ... Source/subMenuClientes.obj
+	@echo ... Source/subMenuClientes.i
+	@echo ... Source/subMenuClientes.s
+	@echo ... Source/subMenuProdutos.obj
+	@echo ... Source/subMenuProdutos.i
+	@echo ... Source/subMenuProdutos.s
+	@echo ... Source/subMenuVendas.obj
+	@echo ... Source/subMenuVendas.i
+	@echo ... Source/subMenuVendas.s
+	@echo ... Source/venda.obj
+	@echo ... Source/venda.i
+	@echo ... Source/venda.s
 .PHONY : help
 
 

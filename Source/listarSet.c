@@ -13,7 +13,7 @@ void listarSet(){
 
     system("cls");
     printf("\n\nLISTA DE ESTOQUE POR SETOR: \n\n\n");
-    arq = fopen("../Produtos.dat", "rb");
+    arq = fopen("../arquivos/Produtos.dat", "rb");
     if (arq != NULL){
         printf("----------------------------------------------------------------------------------------------------------------------------------------------------------\n\n");
         while (fread(&produtos, sizeof(TProduto), 1, arq)){

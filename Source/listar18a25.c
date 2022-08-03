@@ -15,7 +15,7 @@ void listar18a25(){
 
     system("cls");
     printf("\n\nCLIENTES COM IDADE ENTRE 18 A 25 ANOS: \n");
-    arq = fopen("../Clientes.dat", "rb");
+    arq = fopen("../arquivos/Clientes.dat", "rb");
     if(arq!=NULL){
         printf("-------------------------------------------------------------------------------------------------------------------------------------------------------------\n");
         while (fread(&listCliente, sizeof(TCliente), 1, arq)){

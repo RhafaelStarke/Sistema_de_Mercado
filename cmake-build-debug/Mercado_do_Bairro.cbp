@@ -78,55 +78,55 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/atualClien.c">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/Source/atualClien.c">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/atualProd.c">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/Source/atualProd.c">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cadNovClien.c">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/Source/cadNovClien.c">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/cadNovProd.c">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/Source/cadNovProd.c">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/estoqBaixo.c">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/Source/estoqBaixo.c">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/funcoes.h">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/Source/funcoes.h">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/listar1000.c">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/Source/listar1000.c">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/listar18a25.c">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/Source/listar18a25.c">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/listarSet.c">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/Source/listarSet.c">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/listarVendas.c">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/Source/listarVendas.c">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/programaPrincipal.c">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/Source/programaPrincipal.c">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/registros.h">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/Source/registros.h">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/subMenu.h">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/Source/subMenu.h">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/subMenuClientes.c">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/Source/subMenuClientes.c">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/subMenuProdutos.c">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/Source/subMenuProdutos.c">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/subMenuVendas.c">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/Source/subMenuVendas.c">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
-		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/venda.c">
+		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/Source/venda.c">
 			<Option target="Mercado_do_Bairro"/>
 		</Unit>
 		<Unit filename="C:/Users/rh4f4/OneDrive/Documentos/Sistema_de_Mercado/CMakeLists.txt">
